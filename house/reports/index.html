@@ -1,0 +1,4258 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="generator" content="HTMLTestRunner 0.9.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <!-- <script type="text/javascript" src="js/echarts.common.min.js"></script> -->
+    <script type="text/javascript" class="init">
+        $(document).ready(function() {
+            $('#day1').DataTable();
+            $('#day7').DataTable();
+            $('#day30').DataTable();
+        } );
+    </script>
+    <style type="text/css" media="screen">
+        body        { font-family: Microsoft YaHei,Consolas,arial,sans-serif; font-size: 80%; }
+        table       { font-size: 100%; }
+        pre         { white-space: pre-wrap;word-wrap: break-word; }
+        /* -- heading ---------------------------------------------------------------------- */
+        h1 {
+            font-size: 16pt;
+            color: gray;
+        }
+        .heading {
+            margin-top: 0ex;
+            margin-bottom: 1ex;
+        }
+        .heading .attribute {
+            margin-top: 1ex;
+            margin-bottom: 0;
+        }
+        .heading .description {
+            margin-top: 2ex;
+            margin-bottom: 3ex;
+        }
+        /* -- css div popup ------------------------------------------------------------------------ */
+        a.popup_link {
+        }
+        a.popup_link:hover {
+            color: red;
+        }
+        .popup_window {
+            display: none;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            /*border: solid #627173 1px; */
+            padding: 10px;
+            /*background-color: #E6E6D6; */
+            font-family: "Lucida Console", "Courier New", Courier, monospace;
+            text-align: left;
+            font-size: 8pt;
+            /* width: 500px;*/
+        }
+        /* -- report ------------------------------------------------------------------------ */
+        #show_detail_line {
+            margin-top: 3ex;
+            margin-bottom: 1ex;
+        }
+        #result_table {
+            width: 99%;
+        }
+        #header_row {
+            font-weight: bold;
+            color: #303641;
+            background-color: #ebebeb;
+        }
+        #total_row  { font-weight: bold; }
+        .passClass  { background-color: #bdedbc; }
+        .failClass  { background-color: #ffefa4; }
+        .errorClass { background-color: #ffc9c9; }
+        .passCase   { color: #6c6; }
+        .failCase   { color: #FF6600; font-weight: bold; }
+        .errorCase  { color: #c00; font-weight: bold; }
+        .hiddenRow  { display: none; }
+        .testcase   { margin-left: 2em; }
+        /* -- ending ---------------------------------------------------------------------- */
+        #ending {
+        }
+        #div_base {
+            position:absolute;
+            top:0%;
+            left:5%;
+            right:5%;
+            width: auto;
+            height: auto;
+            margin: -15px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div_base">
+
+    <div class='page-header'>
+        <h1>房屋价格情况统计</h1>
+        <p class='attribute'><strong>统计时间:</strong> 2024-03-01 22:00:09</p>
+        <p class='attribute'><strong>报告耗时:</strong> 2.81s</p>
+    </div>
+
+        <h2>较上1天</h2>
+        <table id="day1" class="display" style="width:100%">
+            <thead>
+            <tr>
+                <th>升降标志</th>
+                <th>房屋名</th>
+                <th>房屋备注</th>
+                <th>房屋总价</th>
+                <th>房屋历史总价</th>
+                <th>房屋单价</th>
+                <th>关注人数</th>
+                <th>小区名</th>
+                <th>房屋链接</th>
+                <th>来源网站</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>新增</td>
+                <td>工人路187号，双气小三房，东南朝向采光好，拎包入住</td>
+                <td>中楼层(共32层)|2012年|3室1厅|94.91平米|南</td>
+                <td>104.8万</td>
+                <td>-</td>
+                <td>11,043元/平</td>
+                <td>25</td>
+                <td>工人路187号</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111880815.html" target="_blank">https://zz.ke.com/ershoufang/104111880815.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三开间朝南，满五唯一，精装，可以拎包入住</td>
+                <td>中楼层(共6层)|2004年|3室2厅|107.99平米|南北</td>
+                <td>95万</td>
+                <td>-</td>
+                <td>8,798元/平</td>
+                <td>5</td>
+                <td>豫花园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112675962.html" target="_blank">https://zz.ke.com/ershoufang/104112675962.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三环内 多层社区 南北通透  多层得房率高</td>
+                <td>中楼层(共6层)|2007年|3室2厅|104.27平米|南北</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>11,509元/平</td>
+                <td>0</td>
+                <td>威尼斯水城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112630162.html" target="_blank">https://zz.ke.com/ershoufang/104112630162.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装三居，房东诚心卖，楼栋位置好，视野采光都不错</td>
+                <td>3室1厅|89.48平米|西南|精装|中楼层(共33层)|板楼</td>
+                <td>103万</td>
+                <td>-</td>
+                <td>11,511元/平</td>
+                <td>1</td>
+                <td>紫韵丽园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111984471.html" target="_blank">https://zz.lianjia.com/ershoufang/104111984471.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>工人路187号，双气小三房，东南朝向采光好，拎包入住</td>
+                <td>3室1厅|94.91平米|南|精装|中楼层(共32层)|板楼</td>
+                <td>104.8万</td>
+                <td>-</td>
+                <td>11,043元/平</td>
+                <td>3</td>
+                <td>工人路187号</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111880815.html" target="_blank">https://zz.lianjia.com/ershoufang/104111880815.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>公园旁次新小区通透三房满五唯一</td>
+                <td>3室2厅|92.38平米|南北|精装|中楼层(共34层)|板楼</td>
+                <td>98万</td>
+                <td>-</td>
+                <td>10,609元/平</td>
+                <td>0</td>
+                <td>栖湖怡家</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112131599.html" target="_blank">https://zz.lianjia.com/ershoufang/104112131599.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>泰宏阳光景苑3室1厅南</td>
+                <td>3室1厅|94.68平米|南|其他|33层|塔楼</td>
+                <td>95万</td>
+                <td>-</td>
+                <td>10,034元/平</td>
+                <td>0</td>
+                <td>泰宏阳光景苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112121822.html" target="_blank">https://zz.lianjia.com/ershoufang/104112121822.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>通透格局，精装自住，视野宽阔，采光充足，配套完善</td>
+                <td>3室2厅|107.22平米|南|精装|中楼层(共32层)|塔楼</td>
+                <td>95.2万</td>
+                <td>-</td>
+                <td>8,879元/平</td>
+                <td>1</td>
+                <td>汇泉城2号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112032125.html" target="_blank">https://zz.lianjia.com/ershoufang/104112032125.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>金三环运河旁万达广场次新房不临高架人车分流</td>
+                <td>3室2厅|92.74平米|南|其他|中楼层(共34层)|塔楼</td>
+                <td>116万</td>
+                <td>-</td>
+                <td>12,509元/平</td>
+                <td>1</td>
+                <td>景悦城2号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112031155.html" target="_blank">https://zz.lianjia.com/ershoufang/104112031155.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>工大旁舒适3房精装修业主诚售</td>
+                <td>3室2厅|103.65平米|南北|精装|中楼层(共33层)|板楼</td>
+                <td>112万</td>
+                <td>-</td>
+                <td>10,806元/平</td>
+                <td>1</td>
+                <td>荣邦城</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112541507.html" target="_blank">https://zz.lianjia.com/ershoufang/104112541507.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>业主急售，大三房，中间楼层，采光充足，配套齐全。</td>
+                <td>3室2厅|103.35平米|南西|简装|中楼层(共34层)|板塔结合</td>
+                <td>84.5万</td>
+                <td>-</td>
+                <td>8,177元/平</td>
+                <td>10</td>
+                <td>祝福红城二期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112258070.html" target="_blank">https://zz.lianjia.com/ershoufang/104112258070.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装修全新未入住网红楼盘</td>
+                <td>3室2厅|89.8平米|南|其他|中楼层(共33层)|板楼</td>
+                <td>102万</td>
+                <td>-</td>
+                <td>11,359元/平</td>
+                <td>0</td>
+                <td>大正水晶森林</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112625253.html" target="_blank">https://zz.lianjia.com/ershoufang/104112625253.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>中间好楼层前面没有遮挡南北通透采光好</td>
+                <td>3室2厅|107.71平米|南北|其他|中楼层(共34层)|板塔结合</td>
+                <td>109万</td>
+                <td>-</td>
+                <td>10,120元/平</td>
+                <td>1</td>
+                <td>祝福红城四期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112651341.html" target="_blank">https://zz.lianjia.com/ershoufang/104112651341.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>正弘数码港，双气电梯房，两梯四户，通透采光好</td>
+                <td>3室2厅|89.81平米|南|其他|中楼层(共32层)|板塔结合</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>13,362元/平</td>
+                <td>0</td>
+                <td>正弘高新数码港</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112663276.html" target="_blank">https://zz.lianjia.com/ershoufang/104112663276.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>网红小区奶油风精装修全新未入住中间层随时可看房</td>
+                <td>3室2厅|89.79平米|南北|精装|中楼层(共33层)|板楼</td>
+                <td>116.5万</td>
+                <td>-</td>
+                <td>12,975元/平</td>
+                <td>1</td>
+                <td>大正水晶森林</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112182421.html" target="_blank">https://zz.lianjia.com/ershoufang/104112182421.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>河工大东邻.含车位.2梯4户小高层.中间楼栋.满五唯一</td>
+                <td>3室2厅|90平米|南北|精装|中楼层(共18层)|板楼</td>
+                <td>108万</td>
+                <td>-</td>
+                <td>12,000元/平</td>
+                <td>1</td>
+                <td>荣邦城中区</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112092104.html" target="_blank">https://zz.lianjia.com/ershoufang/104112092104.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装修，地铁口，中间楼层，人车分流，看房方便采光棒</td>
+                <td>3室1厅|88.13平米|南|简装|中楼层(共34层)|板楼</td>
+                <td>85万</td>
+                <td>-</td>
+                <td>9,645元/平</td>
+                <td>2</td>
+                <td>万科城秋棠苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112191097.html" target="_blank">https://zz.lianjia.com/ershoufang/104112191097.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>低密度小高层格局好户型佳</td>
+                <td>3室2厅|88.75平米|南|精装|中楼层(共18层)|板楼</td>
+                <td>113万</td>
+                <td>-</td>
+                <td>12,733元/平</td>
+                <td>0</td>
+                <td>荣邦城中区</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112166671.html" target="_blank">https://zz.lianjia.com/ershoufang/104112166671.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>带车位全新未入住不临路好楼层有房本随时可以看</td>
+                <td>3室2厅|94.89平米|南|精装|中楼层(共34层)|板楼</td>
+                <td>118万</td>
+                <td>-</td>
+                <td>12,436元/平</td>
+                <td>2</td>
+                <td>万科城湖心岛</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112119790.html" target="_blank">https://zz.lianjia.com/ershoufang/104112119790.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>三环内，满两年，新小区，正弘物业，人车分流</td>
+                <td>中楼层(共34层)|2021年|3室1厅|101.16平米|东北</td>
+                <td>114万</td>
+                <td>117万</td>
+                <td>11,270元/平</td>
+                <td>12</td>
+                <td>金水世纪城</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112215001.html" target="_blank">https://zz.ke.com/ershoufang/104112215001.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>五龙口环境比较好的社区物业好自住精装诚心卖</td>
+                <td>3室2厅|89.31平米|南|简装|中楼层(共32层)|塔楼</td>
+                <td>99.9万</td>
+                <td>105万</td>
+                <td>11,186元/平</td>
+                <td>1</td>
+                <td>城开绿城绿园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112653007.html" target="_blank">https://zz.lianjia.com/ershoufang/104112653007.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>这个户型很哇塞 装修也不赖 业主也诚心卖 来看看呗</td>
+                <td>中楼层(共33层)|2016年|3室2厅|98.9平米|南西南</td>
+                <td>118万</td>
+                <td>118万</td>
+                <td>11,932元/平</td>
+                <td>40</td>
+                <td>升龙天汇3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112499128.html" target="_blank">https://zz.ke.com/ershoufang/104112499128.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>奥体旁 双外国语 经典小三房  诚心卖房</td>
+                <td>中楼层(共34层)|2022年|3室2厅|90.97平米|南</td>
+                <td>109万</td>
+                <td>109万</td>
+                <td>11,982元/平</td>
+                <td>6</td>
+                <td>融信望湖宸院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112255166.html" target="_blank">https://zz.ke.com/ershoufang/104112255166.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>精装修大三房，业主诚心出售，看房方便</td>
+                <td>中楼层(共34层)|2018年|3室2厅|107.73平米|南北</td>
+                <td>96万</td>
+                <td>96万</td>
+                <td>8,912元/平</td>
+                <td>14</td>
+                <td>汇泉城一号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112254294.html" target="_blank">https://zz.ke.com/ershoufang/104112254294.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>电力小区 三居 好楼层  淮河路73</td>
+                <td>中楼层(共6层)|1998年|3室2厅|94.06平米|南北</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>12,758元/平</td>
+                <td>12</td>
+                <td>电力C区332号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112036537.html" target="_blank">https://zz.ke.com/ershoufang/104112036537.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>育才 南北通透三房业主诚意出售</td>
+                <td>中楼层(共7层)3室2厅|104.49平米|南北</td>
+                <td>101万</td>
+                <td>101万</td>
+                <td>9,666元/平</td>
+                <td>0</td>
+                <td>正功花园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112644449.html" target="_blank">https://zz.ke.com/ershoufang/104112644449.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>二环！109平三房！急卖！！！</td>
+                <td>中楼层(共7层)|2001年|3室1厅|109.01平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>10,550元/平</td>
+                <td>1</td>
+                <td>开元新城</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112641622.html" target="_blank">https://zz.ke.com/ershoufang/104112641622.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新禧园 3室2厅 东 南</td>
+                <td>中楼层(共18层)|2011年|3室2厅|107.61平米|东南</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>10,223元/平</td>
+                <td>3</td>
+                <td>新禧园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112550346.html" target="_blank">https://zz.ke.com/ershoufang/104112550346.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>南北通透大三室 精装修 中间楼层采光充足</td>
+                <td>中楼层(共34层)|2019年|3室2厅|109.18平米|南北</td>
+                <td>93万</td>
+                <td>93万</td>
+                <td>8,519元/平</td>
+                <td>9</td>
+                <td>汇泉城5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112538910.html" target="_blank">https://zz.ke.com/ershoufang/104112538910.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>西城社区，08年，多层房子，有固定车位，房东诚心出售</td>
+                <td>中楼层(共7层)|2008年|3室2厅|101.62平米|南北</td>
+                <td>93万</td>
+                <td>93万</td>
+                <td>9,152元/平</td>
+                <td>2</td>
+                <td>茜城社区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112532016.html" target="_blank">https://zz.ke.com/ershoufang/104112532016.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>华淮小区南院 3室2厅 南 北</td>
+                <td>中楼层(共7层)|1996年|3室2厅|109.94平米|南北</td>
+                <td>88万</td>
+                <td>88万</td>
+                <td>8,005元/平</td>
+                <td>2</td>
+                <td>华淮小区南院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112490100.html" target="_blank">https://zz.ke.com/ershoufang/104112490100.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>诚心出售好楼层视野采光很好优选好房</td>
+                <td>中楼层(共34层)|2022年|3室2厅|90.95平米|南</td>
+                <td>102.8万</td>
+                <td>102.8万</td>
+                <td>11,303元/平</td>
+                <td>3</td>
+                <td>汇泉景悦城1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112404540.html" target="_blank">https://zz.ke.com/ershoufang/104112404540.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万达旁 精装3房 拎包入住 采光视野好 不临高价</td>
+                <td>中楼层(共33层)|2012年|3室2厅|107.31平米|南</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>11,183元/平</td>
+                <td>1</td>
+                <td>泰宏阳光景苑</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112348430.html" target="_blank">https://zz.ke.com/ershoufang/104112348430.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>精装大三室 不临高架 南北通透 采光很好</td>
+                <td>中楼层(共34层)|2018年|3室2厅|107.39平米|南北</td>
+                <td>104万</td>
+                <td>104万</td>
+                <td>9,685元/平</td>
+                <td>4</td>
+                <td>汇泉城一号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112327061.html" target="_blank">https://zz.ke.com/ershoufang/104112327061.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>位置安静 不临高架 号楼层 采光好 业主诚心出售</td>
+                <td>中楼层(共34层)|2019年|3室2厅|108.33平米|南北</td>
+                <td>99万</td>
+                <td>99万</td>
+                <td>9,139元/平</td>
+                <td>0</td>
+                <td>汇泉城5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112312689.html" target="_blank">https://zz.ke.com/ershoufang/104112312689.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万达旁 二砂文创园 南边通透三房 纯毛坯次新房</td>
+                <td>中楼层(共28层)3室2厅|101.41平米|南东</td>
+                <td>113万</td>
+                <td>113万</td>
+                <td>11,143元/平</td>
+                <td>7</td>
+                <td>阳光城丽景公馆北苑</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112312197.html" target="_blank">https://zz.ke.com/ershoufang/104112312197.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>【贝壳优选】户型方正 中间好楼层 地铁口</td>
+                <td>中楼层(共34层)|2022年|3室2厅|90.62平米|南</td>
+                <td>113万</td>
+                <td>113万</td>
+                <td>12,470元/平</td>
+                <td>5</td>
+                <td>融信望湖宸院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112262171.html" target="_blank">https://zz.ke.com/ershoufang/104112262171.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万达商圈 全明户型 绿化好 人车分流 年代新 出行方便</td>
+                <td>中楼层(共34层)|2021年|3室2厅|98.41平米|南</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>10,670元/平</td>
+                <td>5</td>
+                <td>景悦城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112253776.html" target="_blank">https://zz.ke.com/ershoufang/104112253776.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>大三房 采光充足 诚心出售 看房方便</td>
+                <td>中楼层(共33层)|2018年|3室2厅|107.95平米|南北</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>10,654元/平</td>
+                <td>2</td>
+                <td>世纪景园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112228700.html" target="_blank">https://zz.ke.com/ershoufang/104112228700.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>奥体旁，地铁口，全明小三房，业主诚心出售，人车分流</td>
+                <td>中楼层(共34层)|2021年|3室2厅|99.41平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>11,569元/平</td>
+                <td>1</td>
+                <td>景悦城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112212700.html" target="_blank">https://zz.ke.com/ershoufang/104112212700.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>西三环万达旁，全明户型，人车分流，年代新</td>
+                <td>中楼层(共34层)|2001年|3室2厅|98.41平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>11,686元/平</td>
+                <td>0</td>
+                <td>景悦城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112212636.html" target="_blank">https://zz.ke.com/ershoufang/104112212636.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>多层三楼，双气，可贷款，大三室，诚心出售，看房方便</td>
+                <td>中楼层(共7层)3室1厅|108.86平米|南北</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>10,105元/平</td>
+                <td>1</td>
+                <td>市场街74-82号</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112209927.html" target="_blank">https://zz.ke.com/ershoufang/104112209927.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万达商圈 年代新 人车分流 绿化好 全明户型 出行方便</td>
+                <td>中楼层(共23层)|2021年|3室2厅|98.67平米|南</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>10,642元/平</td>
+                <td>13</td>
+                <td>景悦城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112182332.html" target="_blank">https://zz.ke.com/ershoufang/104112182332.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>西站住宅小区 边户三房 采光好 户型好 位置好</td>
+                <td>中楼层(共7层)3室2厅|93.19平米|南</td>
+                <td>98万</td>
+                <td>98万</td>
+                <td>10,517元/平</td>
+                <td>2</td>
+                <td>西站路住宅小区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112144664.html" target="_blank">https://zz.ke.com/ershoufang/104112144664.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>中原路十号线多层三居室出售满五年随时看房</td>
+                <td>中楼层(共6层)|2004年|3室2厅|109.61平米|南北</td>
+                <td>96万</td>
+                <td>96万</td>
+                <td>8,759元/平</td>
+                <td>6</td>
+                <td>茜城五月天</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112144089.html" target="_blank">https://zz.ke.com/ershoufang/104112144089.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>公园旁 次新小区  通透三房  满五唯一</td>
+                <td>中楼层(共34层)|2016年|3室2厅|92.38平米|南北</td>
+                <td>98万</td>
+                <td>98万</td>
+                <td>10,609元/平</td>
+                <td>6</td>
+                <td>栖湖怡家</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112131599.html" target="_blank">https://zz.ke.com/ershoufang/104112131599.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>泰宏阳光景苑 3室1厅 南</td>
+                <td>中楼层(共33层)|2012年|3室1厅|94.68平米|南</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,034元/平</td>
+                <td>2</td>
+                <td>泰宏阳光景苑</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112121822.html" target="_blank">https://zz.ke.com/ershoufang/104112121822.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>公园道三期 全南三居 满五唯一 中间层 邻地铁</td>
+                <td>中楼层(共33层)|2017年|3室1厅|87.92平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>13,081元/平</td>
+                <td>15</td>
+                <td>朗悦公园道1号誉园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111402866.html" target="_blank">https://zz.ke.com/ershoufang/104111402866.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>公园道三房纯边户，全明户型，采光视野好。</td>
+                <td>中楼层(共32层)|2022年|3室2厅|87.25平米|南北</td>
+                <td>116万</td>
+                <td>116万</td>
+                <td>13,296元/平</td>
+                <td>24</td>
+                <td>朗悦公园道1号熙园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110167327.html" target="_blank">https://zz.ke.com/ershoufang/104110167327.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>优质小三房，好楼层，南边无遮挡，采光充足。</td>
+                <td>中楼层(共33层)|2016年|3室1厅|82.31平米|南</td>
+                <td>82.5万</td>
+                <td>82.5万</td>
+                <td>10,024元/平</td>
+                <td>45</td>
+                <td>新芒果春天苑</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110982372.html" target="_blank">https://zz.ke.com/ershoufang/104110982372.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>郑大旁地铁口、满五唯一、双气、精装修小三房</td>
+                <td>中楼层(共20层)|2016年|3室2厅|87.18平米|南</td>
+                <td>96万</td>
+                <td>96万</td>
+                <td>11,012元/平</td>
+                <td>10</td>
+                <td>谦祥万和城三期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110730887.html" target="_blank">https://zz.ke.com/ershoufang/104110730887.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>翰林国际桃李园满两年精装修 看房方便 业主诚心出售。</td>
+                <td>中楼层(共33层)|2017年|3室2厅|94.26平米|南北</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>11,670元/平</td>
+                <td>29</td>
+                <td>翰林国际城桃李园小区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110142006.html" target="_blank">https://zz.ke.com/ershoufang/104110142006.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口 纯南精装小三房 业主诚心出售 看房提前约</td>
+                <td>中楼层(共27层)|2016年|3室2厅|86.96平米|南西南</td>
+                <td>88万</td>
+                <td>88万</td>
+                <td>10,120元/平</td>
+                <td>33</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104105073802.html" target="_blank">https://zz.ke.com/ershoufang/104105073802.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万和城 地铁口  精装修 无遮挡 标准三居</td>
+                <td>中楼层(共34层)|2016年|3室2厅|89.04平米|南</td>
+                <td>89万</td>
+                <td>89万</td>
+                <td>9,996元/平</td>
+                <td>1</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112716019.html" target="_blank">https://zz.ke.com/ershoufang/104112716019.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>谦祥万和城 朝南三室 契税满2年 采光充足 看房方便</td>
+                <td>中楼层(共34层)|2016年|3室2厅|86.23平米|东南</td>
+                <td>84万</td>
+                <td>84万</td>
+                <td>9,742元/平</td>
+                <td>5</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112553556.html" target="_blank">https://zz.ke.com/ershoufang/104112553556.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>17年次新小区，邻郑大河工大，一号地铁口河南工业大学</td>
+                <td>中楼层(共33层)|2017年|3室2厅|92.81平米|南</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>12,930元/平</td>
+                <td>0</td>
+                <td>翰林国际城桃李园小区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112504703.html" target="_blank">https://zz.ke.com/ershoufang/104112504703.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>升龙又一城  三房  南户 看房方便</td>
+                <td>中楼层(共32层)|2016年|3室2厅|90.67平米|南北</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>9,927元/平</td>
+                <td>1</td>
+                <td>升龙又一城AB区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112485094.html" target="_blank">https://zz.ke.com/ershoufang/104112485094.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>郑大旁  地铁口  采光刺眼 好户型</td>
+                <td>中楼层(共33层)|2018年|3室2厅|87.91平米|南</td>
+                <td>92万</td>
+                <td>92万</td>
+                <td>10,466元/平</td>
+                <td>4</td>
+                <td>裕华满园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112465758.html" target="_blank">https://zz.ke.com/ershoufang/104112465758.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>业主诚售，中间楼层，采光好，无遮挡</td>
+                <td>中楼层(共34层)|2016年|3室2厅|89.67平米|南</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>11,710元/平</td>
+                <td>4</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112445033.html" target="_blank">https://zz.ke.com/ershoufang/104112445033.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口 纯南小三房 精装修拎包入住 看房方便</td>
+                <td>中楼层(共34层)|2015年|3室2厅|90.07平米|南</td>
+                <td>92万</td>
+                <td>92万</td>
+                <td>10,215元/平</td>
+                <td>3</td>
+                <td>谦祥万和城一期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112437287.html" target="_blank">https://zz.ke.com/ershoufang/104112437287.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满二，简单装修，家里老人居住，看房方便</td>
+                <td>中楼层(共18层)|2012年|3室2厅|90.71平米|东东南</td>
+                <td>86万</td>
+                <td>86万</td>
+                <td>9,481元/平</td>
+                <td>3</td>
+                <td>祝福红城一期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112366920.html" target="_blank">https://zz.ke.com/ershoufang/104112366920.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>网红盘，三面朝南，面=面211大学，2019年新房</td>
+                <td>中楼层(共33层)|2018年|3室2厅|88.27平米|南北</td>
+                <td>99万</td>
+                <td>99万</td>
+                <td>11,216元/平</td>
+                <td>3</td>
+                <td>裕华满园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112343858.html" target="_blank">https://zz.ke.com/ershoufang/104112343858.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>升龙又一城  1号线地铁口 精装修 业主急售</td>
+                <td>中楼层(共32层)|2016年|3室2厅|90.4平米|南</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,509元/平</td>
+                <td>4</td>
+                <td>升龙又一城AB区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112330497.html" target="_blank">https://zz.ke.com/ershoufang/104112330497.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>双地铁口南北通透三居室，业主自住，精装修</td>
+                <td>中楼层(共32层)|2016年|3室2厅|99.19平米|南北</td>
+                <td>119万</td>
+                <td>119万</td>
+                <td>11,998元/平</td>
+                <td>5</td>
+                <td>升龙又一城AB区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112295422.html" target="_blank">https://zz.ke.com/ershoufang/104112295422.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>郑大旁、地铁口、满五年、双气精装修小三房</td>
+                <td>中楼层(共34层)|2016年|3室2厅|86.85平米|南</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,939元/平</td>
+                <td>6</td>
+                <td>谦祥万和城三期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112267992.html" target="_blank">https://zz.ke.com/ershoufang/104112267992.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>此房业主诚心出售，采光充足，满五不唯一。有电梯</td>
+                <td>中楼层(共25层)|2014年|3室1厅|104.04平米|东南</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>8,651元/平</td>
+                <td>2</td>
+                <td>基正盛世港湾</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112251117.html" target="_blank">https://zz.ke.com/ershoufang/104112251117.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>楼层好 视野开阔 采光充足  地铁口 大学旁</td>
+                <td>中楼层(共33层)|2017年|3室2厅|92.81平米|南</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>11,853元/平</td>
+                <td>12</td>
+                <td>翰林国际城桃李园小区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112156130.html" target="_blank">https://zz.ke.com/ershoufang/104112156130.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>郑大旁地铁口万和城次新社区3室2厅好楼层拎包入住</td>
+                <td>中楼层(共34层)|2015年|3室2厅|88.61平米|南</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>13,543元/平</td>
+                <td>0</td>
+                <td>谦祥万和城一期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112089880.html" target="_blank">https://zz.ke.com/ershoufang/104112089880.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五唯一 楼层好 百米楼间距 正看小区花园</td>
+                <td>中楼层(共34层)|2016年|3室1厅|87.27平米|南</td>
+                <td>85万</td>
+                <td>85万</td>
+                <td>9,740元/平</td>
+                <td>3</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112076293.html" target="_blank">https://zz.ke.com/ershoufang/104112076293.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>配套设施齐全，交通便利，1号线地铁口</td>
+                <td>中楼层(共27层)|2016年|3室2厅|86.96平米|东南</td>
+                <td>96.8万</td>
+                <td>96.8万</td>
+                <td>11,132元/平</td>
+                <td>0</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112072573.html" target="_blank">https://zz.ke.com/ershoufang/104112072573.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>高新郑大网红盘，采光刺眼，三面有阳光</td>
+                <td>中楼层(共33层)|2018年|3室2厅|91.43平米|南</td>
+                <td>118万</td>
+                <td>118万</td>
+                <td>12,907元/平</td>
+                <td>0</td>
+                <td>裕华满园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111966924.html" target="_blank">https://zz.ke.com/ershoufang/104111966924.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>工大地铁口 客厅带阳台 纯南户三房</td>
+                <td>中楼层(共20层)|2016年|3室1厅|88.57平米|南</td>
+                <td>98万</td>
+                <td>98万</td>
+                <td>11,065元/平</td>
+                <td>3</td>
+                <td>谦祥万和城三期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111964369.html" target="_blank">https://zz.ke.com/ershoufang/104111964369.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>郑大旁  地铁口   优质小三房   采光好</td>
+                <td>中楼层(共33层)|2018年|3室2厅|88.11平米|南</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>10,215元/平</td>
+                <td>6</td>
+                <td>裕华满园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111955109.html" target="_blank">https://zz.ke.com/ershoufang/104111955109.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五年  双气 双地铁口 精装修 南北通透三房</td>
+                <td>中楼层(共26层)|2016年|3室2厅|93.89平米|南北</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>12,781元/平</td>
+                <td>6</td>
+                <td>升龙又一城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111915590.html" target="_blank">https://zz.ke.com/ershoufang/104111915590.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五年小区，双地铁双气南北向户型，精装三房。</td>
+                <td>中楼层(共27层)|2016年|3室2厅|93.89平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>12,249元/平</td>
+                <td>2</td>
+                <td>升龙又一城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111878443.html" target="_blank">https://zz.ke.com/ershoufang/104111878443.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁小三房好楼层采光通风视野好次新小区</td>
+                <td>中楼层(共26层)|2016年|3室1厅|94平米|南</td>
+                <td>91万</td>
+                <td>91万</td>
+                <td>9,681元/平</td>
+                <td>6</td>
+                <td>升龙又一城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111859899.html" target="_blank">https://zz.ke.com/ershoufang/104111859899.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>升龙又一城三号院92平边户三房中间楼层</td>
+                <td>中楼层(共24层)|2016年|3室2厅|92.3平米|南</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>13,002元/平</td>
+                <td>1</td>
+                <td>升龙又一城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111849152.html" target="_blank">https://zz.ke.com/ershoufang/104111849152.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内地铁口 品质小区 精装小三房朝南户型 拎包入住</td>
+                <td>中楼层(共34层)|2017年|3室1厅|89.99平米|南</td>
+                <td>108万</td>
+                <td>108万</td>
+                <td>12,002元/平</td>
+                <td>38</td>
+                <td>和润林湖美景</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111162845.html" target="_blank">https://zz.ke.com/ershoufang/104111162845.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环地铁口，少有的改善楼盘，精装小三室</td>
+                <td>中楼层(共34层)|2019年|3室2厅|89.34平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>12,873元/平</td>
+                <td>79</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104109316369.html" target="_blank">https://zz.ke.com/ershoufang/104109316369.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新禧园 3室2厅 东 南</td>
+                <td>中楼层(共18层)|2011年|3室2厅|107.61平米|东南</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>10,223元/平</td>
+                <td>3</td>
+                <td>新禧园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112550346.html" target="_blank">https://zz.ke.com/ershoufang/104112550346.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区 临地铁 楼层采光好次新小区临地铁楼好</td>
+                <td>中楼层(共33层)|2018年|3室1厅|89.13平米|南</td>
+                <td>101万</td>
+                <td>101万</td>
+                <td>11,332元/平</td>
+                <td>19</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112321943.html" target="_blank">https://zz.ke.com/ershoufang/104112321943.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内  09年多层  地铁口  配套齐全</td>
+                <td>中楼层(共6层)|2009年|3室2厅|91.9平米|南北</td>
+                <td>89万</td>
+                <td>89万</td>
+                <td>9,685元/平</td>
+                <td>5</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111770884.html" target="_blank">https://zz.ke.com/ershoufang/104111770884.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>价位低，楼层好，全明格局，地铁口</td>
+                <td>中楼层(共33层)|2018年|3室2厅|90.64平米|南</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>11,364元/平</td>
+                <td>11</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111650183.html" target="_blank">https://zz.ke.com/ershoufang/104111650183.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内 1号线地铁口200米 多层三楼 带地下室</td>
+                <td>中楼层(共6层)|2006年|3室2厅|92.07平米|南北</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>9,776元/平</td>
+                <td>14</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111615165.html" target="_blank">https://zz.ke.com/ershoufang/104111615165.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>朝南向大两居 中层视野开阔 采光好</td>
+                <td>中楼层(共22层)|2010年|3室2厅|107.89平米|南西南</td>
+                <td>92万</td>
+                <td>92万</td>
+                <td>8,528元/平</td>
+                <td>0</td>
+                <td>建设西路169号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111405697.html" target="_blank">https://zz.ke.com/ershoufang/104111405697.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区 中间楼层 采光无遮挡 配套成熟</td>
+                <td>中楼层(共34层)|2019年|3室2厅|88平米|南北</td>
+                <td>117万</td>
+                <td>117万</td>
+                <td>13,296元/平</td>
+                <td>5</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111322157.html" target="_blank">https://zz.ke.com/ershoufang/104111322157.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一，距离一号线地铁口西三环站不到800米</td>
+                <td>中楼层(共33层)|2018年|3室2厅|89.13平米|南</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>11,557元/平</td>
+                <td>42</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110826733.html" target="_blank">https://zz.ke.com/ershoufang/104110826733.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>全明格局，楼层好，视野开阔，位置好</td>
+                <td>中楼层(共33层)|2018年|3室2厅|88.04平米|东南</td>
+                <td>107万</td>
+                <td>107万</td>
+                <td>12,154元/平</td>
+                <td>4</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110824615.html" target="_blank">https://zz.ke.com/ershoufang/104110824615.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>南向三房 中间楼层 毛坯房，没住过</td>
+                <td>中楼层(共33层)|2018年|3室1厅|90.88平米|南</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>11,554元/平</td>
+                <td>15</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110809359.html" target="_blank">https://zz.ke.com/ershoufang/104110809359.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>西流湖公园 双气三房 电梯小高层 有车位 诚心出售</td>
+                <td>中楼层(共11层)|2012年|3室2厅|93.01平米|南北</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,214元/平</td>
+                <td>39</td>
+                <td>正大花溪</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110758158.html" target="_blank">https://zz.ke.com/ershoufang/104110758158.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>中原路西三环，小三室，多层中间楼层，满五唯一</td>
+                <td>中楼层(共6层)|2012年|3室2厅|91.83平米|南</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,346元/平</td>
+                <td>10</td>
+                <td>正大花溪</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110704976.html" target="_blank">https://zz.ke.com/ershoufang/104110704976.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口两梯三户双气三房，南北通透全明户型，拎包入住</td>
+                <td>中楼层(共15层)|2009年|3室2厅|102.96平米|南北</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>9,713元/平</td>
+                <td>20</td>
+                <td>金源城上城</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110163810.html" target="_blank">https://zz.ke.com/ershoufang/104110163810.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>此房南北通透，采光通透，中间楼层，得房率高</td>
+                <td>中楼层(共7层)3室1厅|107.54平米|南北</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>8,369元/平</td>
+                <td>1</td>
+                <td>三官庙北拐街</td>
+                <td><a href="https://zz.ke.com/ershoufang/104109746516.html" target="_blank">https://zz.ke.com/ershoufang/104109746516.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>毛坯房，配套齐全，朝南户型，没有个税，交通便利。</td>
+                <td>中楼层(共33层)|2019年|3室2厅|88.01平米|南</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>13,635元/平</td>
+                <td>22</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108700168.html" target="_blank">https://zz.ke.com/ershoufang/104108700168.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>2005年 有地下室 双气 西三环地铁口10米 近西流湖公园</td>
+                <td>中楼层(共6层)|2005年|3室2厅|109.37平米|南北</td>
+                <td>102万</td>
+                <td>102万</td>
+                <td>9,327元/平</td>
+                <td>9</td>
+                <td>中原水厂家属院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108661436.html" target="_blank">https://zz.ke.com/ershoufang/104108661436.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内 地铁口 人车分流 年代新 双气 楼层好 视野开阔</td>
+                <td>中楼层(共34层)|2017年|3室2厅|89.99平米|南</td>
+                <td>104万</td>
+                <td>104万</td>
+                <td>11,557元/平</td>
+                <td>32</td>
+                <td>和润林湖美景</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108578206.html" target="_blank">https://zz.ke.com/ershoufang/104108578206.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口，城上城 标准三房 南北通透户型，业主诚心出售</td>
+                <td>中楼层(共15层)|2009年|3室2厅|102.96平米|南北</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>10,199元/平</td>
+                <td>35</td>
+                <td>金源城上城</td>
+                <td><a href="https://zz.ke.com/ershoufang/104106632134.html" target="_blank">https://zz.ke.com/ershoufang/104106632134.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内 地铁口旁 多层南北通透中间楼层三房诚心卖</td>
+                <td>中楼层(共6层)|2009年|3室2厅|91.9平米|南北</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>10,882元/平</td>
+                <td>15</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108665080.html" target="_blank">https://zz.ke.com/ershoufang/104108665080.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口，中间楼层，南北通透户型，业主诚心出售</td>
+                <td>中楼层(共7层)|2006年|3室2厅|109.71平米|南北</td>
+                <td>98万</td>
+                <td>98万</td>
+                <td>8,933元/平</td>
+                <td>30</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108642807.html" target="_blank">https://zz.ke.com/ershoufang/104108642807.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新禧园 3室2厅 东 南</td>
+                <td>中楼层(共18层)|2011年|3室2厅|107.61平米|东南</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>10,223元/平</td>
+                <td>3</td>
+                <td>新禧园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112550346.html" target="_blank">https://zz.ke.com/ershoufang/104112550346.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>五建家属院 地铁口 双气中间楼层 户型方正</td>
+                <td>中楼层(共7层)|1996年|3室2厅|83.45平米|南北</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>12,583元/平</td>
+                <td>5</td>
+                <td>省五建家属院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111980483.html" target="_blank">https://zz.ke.com/ershoufang/104111980483.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区 中间楼层 采光无遮挡 配套成熟</td>
+                <td>中楼层(共34层)|2019年|3室2厅|88平米|南北</td>
+                <td>117万</td>
+                <td>117万</td>
+                <td>13,296元/平</td>
+                <td>5</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111322157.html" target="_blank">https://zz.ke.com/ershoufang/104111322157.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>前进路市场街 101平方3房02年110万</td>
+                <td>中楼层(共7层)|2003年|3室2厅|101.01平米|南</td>
+                <td>89万</td>
+                <td>89万</td>
+                <td>8,812元/平</td>
+                <td>5</td>
+                <td>市场街74-82号</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108906176.html" target="_blank">https://zz.ke.com/ershoufang/104108906176.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>五一公园 双地铁 02年双气三居室 南北通透</td>
+                <td>中楼层(共5层)3室1厅|85.2平米|南北</td>
+                <td>85万</td>
+                <td>85万</td>
+                <td>9,977元/平</td>
+                <td>23</td>
+                <td>建设路107号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104107311118.html" target="_blank">https://zz.ke.com/ershoufang/104107311118.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>五一公园地铁口、 3室。3层、南北朝向</td>
+                <td>中楼层(共7层)3室2厅|95.07平米|南北</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>10,519元/平</td>
+                <td>30</td>
+                <td>国棉一厂家属院二区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104106786456.html" target="_blank">https://zz.ke.com/ershoufang/104106786456.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>电力小区三居好楼层淮河路73</td>
+                <td>3室2厅|94.06平米|南北|简装|中楼层(共6层)|板楼</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>12,758元/平</td>
+                <td>3</td>
+                <td>电力C区332号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112036537.html" target="_blank">https://zz.lianjia.com/ershoufang/104112036537.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区小高层精装修中原万达旁</td>
+                <td>3室1厅|86.87平米|南|精装|中楼层(共17层)|板塔结合</td>
+                <td>119万</td>
+                <td>119万</td>
+                <td>13,699元/平</td>
+                <td>0</td>
+                <td>阳光城丽景公馆南苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112151431.html" target="_blank">https://zz.lianjia.com/ershoufang/104112151431.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>20年交房房子精装修人车分流拎包住</td>
+                <td>3室2厅|88.48平米|南|精装|中楼层(共33层)|板塔结合</td>
+                <td>107万</td>
+                <td>107万</td>
+                <td>12,094元/平</td>
+                <td>5</td>
+                <td>升龙天汇七号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112110371.html" target="_blank">https://zz.lianjia.com/ershoufang/104112110371.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>贝壳优选不临高架南北通透小三房采光好</td>
+                <td>3室2厅|88.15平米|南北|精装|中楼层(共34层)|板塔结合</td>
+                <td>118万</td>
+                <td>118万</td>
+                <td>13,387元/平</td>
+                <td>4</td>
+                <td>和昌湾景国际</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111889962.html" target="_blank">https://zz.lianjia.com/ershoufang/104111889962.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>85平小三房，每个卧室大小均等，纯朝南户型，全明户型</td>
+                <td>3室1厅|83.8平米|南|精装|中楼层(共34层)|塔楼</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>12,292元/平</td>
+                <td>9</td>
+                <td>保利心语一期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110515858.html" target="_blank">https://zz.lianjia.com/ershoufang/104110515858.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>康桥品质小高层社区得房率高公摊少南北通透三房</td>
+                <td>3室2厅|87.15平米|南北|精装|中楼层(共11层)|塔楼</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>13,196元/平</td>
+                <td>1</td>
+                <td>康桥上城品</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111645914.html" target="_blank">https://zz.lianjia.com/ershoufang/104111645914.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环地铁口，少有的改善楼盘，精装小三室</td>
+                <td>3室2厅|89.34平米|南|精装|中楼层(共34层)|塔楼</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>12,873元/平</td>
+                <td>7</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104109316369.html" target="_blank">https://zz.lianjia.com/ershoufang/104109316369.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>73双气小高层通透3室出行便利随时看房</td>
+                <td>3室1厅|103.53平米|南北|简装|中楼层(共18层)|板塔结合</td>
+                <td>88万</td>
+                <td>88万</td>
+                <td>8,500元/平</td>
+                <td>1</td>
+                <td>聚龙花园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110183771.html" target="_blank">https://zz.lianjia.com/ershoufang/104110183771.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>湖光新苑双气地暖小区小高层小三房</td>
+                <td>3室1厅|89.84平米|南北|简装|中楼层(共11层)|板塔结合</td>
+                <td>82万</td>
+                <td>82万</td>
+                <td>9,128元/平</td>
+                <td>1</td>
+                <td>湖光新苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111766232.html" target="_blank">https://zz.lianjia.com/ershoufang/104111766232.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>客厅带阳台的二环边小三房光线视野好2016年人车分流</td>
+                <td>3室1厅|88.78平米|南西|精装|中楼层(共32层)|板塔结合</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>11,264元/平</td>
+                <td>4</td>
+                <td>升龙天汇3号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111688405.html" target="_blank">https://zz.lianjia.com/ershoufang/104111688405.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>标准小三房精装修楼层好看房方便</td>
+                <td>3室2厅|85.4平米|南北|精装|中楼层(共34层)|板塔结合</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>11,710元/平</td>
+                <td>1</td>
+                <td>盛润锦绣城东院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104109998161.html" target="_blank">https://zz.lianjia.com/ershoufang/104109998161.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>二环边五号线地铁口改善小区电梯双气新装修舒适三房</td>
+                <td>3室2厅|96.22平米|南西|简装|中楼层(共34层)|塔楼</td>
+                <td>113万</td>
+                <td>113万</td>
+                <td>11,744元/平</td>
+                <td>7</td>
+                <td>升龙御玺</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111343093.html" target="_blank">https://zz.lianjia.com/ershoufang/104111343093.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>锦艺国际华都美域三室一厅朝南全明户型精装双气</td>
+                <td>3室2厅|85.92平米|南|精装|中楼层(共33层)|板塔结合</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>11,639元/平</td>
+                <td>8</td>
+                <td>锦艺国际华都美域</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104106236774.html" target="_blank">https://zz.lianjia.com/ershoufang/104106236774.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>奥体旁，精装边户，拎包入住，不临高铁高架，诚意出售</td>
+                <td>3室2厅|85.85平米|南北|精装|中楼层(共33层)|板塔结合</td>
+                <td>83万</td>
+                <td>83万</td>
+                <td>9,669元/平</td>
+                <td>22</td>
+                <td>汇泉城3号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108298787.html" target="_blank">https://zz.lianjia.com/ershoufang/104108298787.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内地铁口品质小区精装小三房朝南户型拎包入住</td>
+                <td>3室1厅|89.99平米|南|精装|中楼层(共34层)|板楼</td>
+                <td>108万</td>
+                <td>108万</td>
+                <td>12,002元/平</td>
+                <td>5</td>
+                <td>和润林湖美景</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111162845.html" target="_blank">https://zz.lianjia.com/ershoufang/104111162845.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>契税满两年，户型方正，好楼层，诚心卖，可看房</td>
+                <td>3室2厅|90.97平米|南|毛坯|中楼层(共34层)|暂无数据</td>
+                <td>110.6万</td>
+                <td>110.6万</td>
+                <td>12,158元/平</td>
+                <td>1</td>
+                <td>融信望湖宸院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110682625.html" target="_blank">https://zz.lianjia.com/ershoufang/104110682625.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>奥体旁双外国语经典小三房诚心卖房</td>
+                <td>3室2厅|90.97平米|南|其他|中楼层(共34层)|暂无数据</td>
+                <td>109万</td>
+                <td>109万</td>
+                <td>11,982元/平</td>
+                <td>2</td>
+                <td>融信望湖宸院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112255166.html" target="_blank">https://zz.lianjia.com/ershoufang/104112255166.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>教师家属院，精装步梯多层三房，采光好，小院静谧</td>
+                <td>3室1厅|89.09平米|东南北|精装|中楼层(共7层)|板楼</td>
+                <td>88万</td>
+                <td>88万</td>
+                <td>9,878元/平</td>
+                <td>3</td>
+                <td>中原区教师住宅小区</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112660701.html" target="_blank">https://zz.lianjia.com/ershoufang/104112660701.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>优选好房，不临高架，好楼层，随时可以看房</td>
+                <td>3室2厅|88.47平米|南|其他|中楼层(共34层)|塔楼</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>11,869元/平</td>
+                <td>0</td>
+                <td>景悦城2号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112685314.html" target="_blank">https://zz.lianjia.com/ershoufang/104112685314.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>精装修大三房，业主诚心出售，看房方便</td>
+                <td>3室2厅|107.73平米|南北|精装|中楼层(共34层)|板塔结合</td>
+                <td>96万</td>
+                <td>96万</td>
+                <td>8,912元/平</td>
+                <td>0</td>
+                <td>汇泉城一号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112254294.html" target="_blank">https://zz.lianjia.com/ershoufang/104112254294.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>这个户型很哇塞装修也不赖业主也诚心卖来看看呗</td>
+                <td>3室2厅|98.9平米|南西南|精装|中楼层(共33层)|板塔结合</td>
+                <td>118万</td>
+                <td>118万</td>
+                <td>11,932元/平</td>
+                <td>3</td>
+                <td>升龙天汇3号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112499128.html" target="_blank">https://zz.lianjia.com/ershoufang/104112499128.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>不临车道中间楼层采光好视野开阔双地铁配套齐全</td>
+                <td>3室1厅|88.54平米|南|精装|中楼层(共33层)|板塔结合</td>
+                <td>109.9万</td>
+                <td>109.9万</td>
+                <td>12,413元/平</td>
+                <td>1</td>
+                <td>锦艺国际华都欧尚</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112499593.html" target="_blank">https://zz.lianjia.com/ershoufang/104112499593.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>正大·美丽泉3室1厅南北</td>
+                <td>3室1厅|91.83平米|南北|精装|中楼层(共26层)|板楼</td>
+                <td>96万</td>
+                <td>96万</td>
+                <td>10,455元/平</td>
+                <td>2</td>
+                <td>正大·美丽泉</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112139365.html" target="_blank">https://zz.lianjia.com/ershoufang/104112139365.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>甄选好房业主着急出售次新小区万科物</td>
+                <td>3室2厅|96.09平米|西南|精装|中楼层(共33层)|板楼</td>
+                <td>116万</td>
+                <td>116万</td>
+                <td>12,073元/平</td>
+                <td>2</td>
+                <td>万科城湖心岛</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111084517.html" target="_blank">https://zz.lianjia.com/ershoufang/104111084517.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>临河而居百分氛围感好房精装新房中间楼层诚售</td>
+                <td>3室1厅|88.08平米|南北|精装|中楼层(共35层)|板楼</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>11,921元/平</td>
+                <td>2</td>
+                <td>新合鑫观悦锦苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111912613.html" target="_blank">https://zz.lianjia.com/ershoufang/104111912613.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>翰林国际桃李园满两年精装修看房方便业主诚心出售。</td>
+                <td>3室2厅|94.26平米|南北|精装|中楼层(共33层)|板楼</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>11,670元/平</td>
+                <td>1</td>
+                <td>翰林国际城桃李园小区</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110142006.html" target="_blank">https://zz.lianjia.com/ershoufang/104110142006.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>工大旁，好楼层，满五不唯一的南北通透三居</td>
+                <td>3室2厅|104.09平米|南北|毛坯|中楼层(共33层)|板楼</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>9,608元/平</td>
+                <td>2</td>
+                <td>荣邦城</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111440159.html" target="_blank">https://zz.lianjia.com/ershoufang/104111440159.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>甄选好房着急出售次新小区中间楼层环境优美</td>
+                <td>3室2厅|88.95平米|南|精装|中楼层(共27层)|板楼</td>
+                <td>86万</td>
+                <td>86万</td>
+                <td>9,669元/平</td>
+                <td>0</td>
+                <td>金辉优步花园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111081387.html" target="_blank">https://zz.lianjia.com/ershoufang/104111081387.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>8号D铁口建业开发三房光线充足上科创</td>
+                <td>3室2厅|88.08平米|南北|精装|33层|塔楼</td>
+                <td>92万</td>
+                <td>92万</td>
+                <td>10,446元/平</td>
+                <td>6</td>
+                <td>五龙新城香榭园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111102599.html" target="_blank">https://zz.lianjia.com/ershoufang/104111102599.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>双地铁口的次新小区，三开间朝南向</td>
+                <td>3室2厅|90.48平米|南|简装|中楼层(共24层)|板塔结合</td>
+                <td>87万</td>
+                <td>87万</td>
+                <td>9,616元/平</td>
+                <td>9</td>
+                <td>升龙又一城AB区</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111155401.html" target="_blank">https://zz.lianjia.com/ershoufang/104111155401.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>优质小三房，好楼层，南边无遮挡，采光充足。</td>
+                <td>3室1厅|82.31平米|南|简装|中楼层(共33层)|板楼</td>
+                <td>82.5万</td>
+                <td>82.5万</td>
+                <td>10,024元/平</td>
+                <td>6</td>
+                <td>新芒果春天苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110982372.html" target="_blank">https://zz.lianjia.com/ershoufang/104110982372.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>好户型万科品质采光好业主诚心卖</td>
+                <td>3室2厅|93.19平米|南|其他|中楼层(共33层)|板楼</td>
+                <td>113万</td>
+                <td>113万</td>
+                <td>12,126元/平</td>
+                <td>0</td>
+                <td>万科城湖心岛</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110068145.html" target="_blank">https://zz.lianjia.com/ershoufang/104110068145.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>公园道三期全南三居满五唯一中间层邻地铁</td>
+                <td>3室1厅|87.92平米|南|简装|中楼层(共33层)|板塔结合</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>13,081元/平</td>
+                <td>0</td>
+                <td>朗悦公园道1号誉园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111402866.html" target="_blank">https://zz.lianjia.com/ershoufang/104111402866.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口纯南精装小三房业主诚心出售看房提前约</td>
+                <td>3室2厅|86.96平米|南西南|精装|中楼层(共27层)|板楼</td>
+                <td>88万</td>
+                <td>88万</td>
+                <td>10,120元/平</td>
+                <td>22</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104105073802.html" target="_blank">https://zz.lianjia.com/ershoufang/104105073802.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>郑大旁地铁口、满五唯一、双气、精装修小三房</td>
+                <td>3室2厅|87.18平米|南|精装|中楼层(共20层)|板楼</td>
+                <td>96万</td>
+                <td>96万</td>
+                <td>11,012元/平</td>
+                <td>1</td>
+                <td>谦祥万和城三期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110730887.html" target="_blank">https://zz.lianjia.com/ershoufang/104110730887.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万科城秋棠苑中楼层，全屋定制业主自住看房方便</td>
+                <td>3室2厅|88.24平米|南|精装|中楼层(共34层)|板塔结合</td>
+                <td>85万</td>
+                <td>85万</td>
+                <td>9,633元/平</td>
+                <td>3</td>
+                <td>万科城秋棠苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108393024.html" target="_blank">https://zz.lianjia.com/ershoufang/104108393024.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万科湖心岛中间好楼层精装修，业主诚心卖，随时看房</td>
+                <td>3室2厅|94.7平米|南|精装|中楼层(共33层)|板楼</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>11,616元/平</td>
+                <td>2</td>
+                <td>万科城湖心岛</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111308953.html" target="_blank">https://zz.lianjia.com/ershoufang/104111308953.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口，南北，通透户型，中间楼层，采光棒，</td>
+                <td>3室2厅|89.85平米|南北|其他|中楼层(共34层)|板楼</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,574元/平</td>
+                <td>0</td>
+                <td>万科城紫兰苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111731828.html" target="_blank">https://zz.lianjia.com/ershoufang/104111731828.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>公园道1号北苑，精装修，朝南3房，采光好</td>
+                <td>3室2厅|90.43平米|南|精装|中楼层(共27层)|板塔结合</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>11,391元/平</td>
+                <td>0</td>
+                <td>朗悦公园道1号北苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112223769.html" target="_blank">https://zz.lianjia.com/ershoufang/104112223769.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>东原阅城一期精装三房便宜出售</td>
+                <td>3室2厅|88.68平米|南|其他|中楼层(共31层)|板楼</td>
+                <td>106万</td>
+                <td>106万</td>
+                <td>11,954元/平</td>
+                <td>0</td>
+                <td>东原阅城一期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112679982.html" target="_blank">https://zz.lianjia.com/ershoufang/104112679982.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>此房满五唯一，中间楼层，配套设施齐全，小区绿化好</td>
+                <td>3室2厅|88.32平米|南|其他|中楼层(共34层)|板楼</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,757元/平</td>
+                <td>0</td>
+                <td>保利永威西溪花园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112635401.html" target="_blank">https://zz.lianjia.com/ershoufang/104112635401.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区全款房中间楼层采光好随时看房</td>
+                <td>3室1厅|95.61平米|南|其他|中楼层(共33层)|板楼</td>
+                <td>117万</td>
+                <td>117万</td>
+                <td>12,238元/平</td>
+                <td>0</td>
+                <td>万科城湖心岛</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112510683.html" target="_blank">https://zz.lianjia.com/ershoufang/104112510683.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>老铁此房牛B郑大旁地铁口好户型价格便宜</td>
+                <td>3室2厅|88.12平米|南|简装|中楼层(共33层)|板楼</td>
+                <td>84.5万</td>
+                <td>84.5万</td>
+                <td>9,590元/平</td>
+                <td>2</td>
+                <td>裕华满园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112514302.html" target="_blank">https://zz.lianjia.com/ershoufang/104112514302.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环地铁口，少有的改善楼盘，精装小三室</td>
+                <td>3室2厅|89.34平米|南|精装|中楼层(共34层)|塔楼</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>12,873元/平</td>
+                <td>7</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104109316369.html" target="_blank">https://zz.lianjia.com/ershoufang/104109316369.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内地铁口品质小区精装小三房朝南户型拎包入住</td>
+                <td>3室1厅|89.99平米|南|精装|中楼层(共34层)|板楼</td>
+                <td>108万</td>
+                <td>108万</td>
+                <td>12,002元/平</td>
+                <td>5</td>
+                <td>和润林湖美景</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111162845.html" target="_blank">https://zz.lianjia.com/ershoufang/104111162845.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>中原路西三环，小三室，多层中间楼层，满五唯一</td>
+                <td>3室2厅|91.83平米|南|简装|中楼层(共6层)|板楼</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,346元/平</td>
+                <td>0</td>
+                <td>正大花溪</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110704976.html" target="_blank">https://zz.lianjia.com/ershoufang/104110704976.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一，距离一号线地铁口西三环站不到800米</td>
+                <td>3室2厅|89.13平米|南|精装|中楼层(共33层)|板楼</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>11,557元/平</td>
+                <td>2</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110826733.html" target="_blank">https://zz.lianjia.com/ershoufang/104110826733.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内1号线地铁口200米多层三楼带地下室</td>
+                <td>3室2厅|92.07平米|南北|其他|中楼层(共6层)|板楼</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>9,776元/平</td>
+                <td>0</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111615165.html" target="_blank">https://zz.lianjia.com/ershoufang/104111615165.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>南向三房中间楼层毛坯房，没住过</td>
+                <td>3室1厅|90.88平米|南|毛坯|中楼层(共33层)|板楼</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>11,554元/平</td>
+                <td>1</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110809359.html" target="_blank">https://zz.lianjia.com/ershoufang/104110809359.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口，城上城标准三房南北通透户型，业主诚心出售</td>
+                <td>3室2厅|102.96平米|南北|简装|中楼层(共15层)|板楼</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>10,199元/平</td>
+                <td>22</td>
+                <td>金源城上城</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104106632134.html" target="_blank">https://zz.lianjia.com/ershoufang/104106632134.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区中间楼层采光无遮挡配套成熟</td>
+                <td>3室2厅|88平米|南北|其他|中楼层(共34层)|板楼</td>
+                <td>117万</td>
+                <td>117万</td>
+                <td>13,296元/平</td>
+                <td>1</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111322157.html" target="_blank">https://zz.lianjia.com/ershoufang/104111322157.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内地铁口人车分流年代新双气楼层好视野开阔</td>
+                <td>3室2厅|89.99平米|南|精装|中楼层(共34层)|板楼</td>
+                <td>104万</td>
+                <td>104万</td>
+                <td>11,557元/平</td>
+                <td>13</td>
+                <td>和润林湖美景</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108578206.html" target="_blank">https://zz.lianjia.com/ershoufang/104108578206.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>价位低，楼层好，全明格局，地铁口</td>
+                <td>3室2厅|90.64平米|南|精装|中楼层(共33层)|板楼</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>11,364元/平</td>
+                <td>1</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111650183.html" target="_blank">https://zz.lianjia.com/ershoufang/104111650183.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>此房南北通透，采光通透，中间楼层，得房率高</td>
+                <td>3室1厅|107.54平米|南北|简装|中楼层(共7层)|板楼</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>8,369元/平</td>
+                <td>1</td>
+                <td>三官庙北拐街</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104109746516.html" target="_blank">https://zz.lianjia.com/ershoufang/104109746516.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口两梯三户双气三房，南北通透全明户型，拎包入住</td>
+                <td>3室2厅|102.96平米|南北|简装|中楼层(共15层)|板楼</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>9,713元/平</td>
+                <td>1</td>
+                <td>金源城上城</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110163810.html" target="_blank">https://zz.lianjia.com/ershoufang/104110163810.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>西流湖公园双气三房电梯小高层有车位诚心出售</td>
+                <td>3室2厅|93.01平米|南北|精装|中楼层(共11层)|塔楼</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,214元/平</td>
+                <td>4</td>
+                <td>正大花溪</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110758158.html" target="_blank">https://zz.lianjia.com/ershoufang/104110758158.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>全明格局，楼层好，视野开阔，位置好</td>
+                <td>3室2厅|88.04平米|东南|其他|中楼层(共33层)|板楼</td>
+                <td>107万</td>
+                <td>107万</td>
+                <td>12,154元/平</td>
+                <td>1</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110824615.html" target="_blank">https://zz.lianjia.com/ershoufang/104110824615.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>毛坯房，配套齐全，朝南户型，没有个税，交通便利。</td>
+                <td>3室2厅|88.01平米|南|毛坯|中楼层(共33层)|塔楼</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>13,635元/平</td>
+                <td>2</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108700168.html" target="_blank">https://zz.lianjia.com/ershoufang/104108700168.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内地铁口旁多层南北通透中间楼层三房诚心卖</td>
+                <td>3室2厅|91.9平米|南北|简装|中楼层(共6层)|板楼</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>10,882元/平</td>
+                <td>12</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108665080.html" target="_blank">https://zz.lianjia.com/ershoufang/104108665080.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口，中间楼层，南北通透户型，业主诚心出售</td>
+                <td>3室2厅|109.71平米|南北|简装|中楼层(共7层)|板楼</td>
+                <td>98万</td>
+                <td>98万</td>
+                <td>8,933元/平</td>
+                <td>19</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108642807.html" target="_blank">https://zz.lianjia.com/ershoufang/104108642807.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>2005年有地下室双气西三环地铁口10米近西流湖公园</td>
+                <td>3室2厅|109.37平米|南北|简装|中楼层(共6层)|板楼</td>
+                <td>102万</td>
+                <td>102万</td>
+                <td>9,327元/平</td>
+                <td>3</td>
+                <td>中原水厂家属院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108661436.html" target="_blank">https://zz.lianjia.com/ershoufang/104108661436.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内09年多层地铁口配套齐全</td>
+                <td>3室2厅|91.9平米|南北|其他|中楼层(共6层)|板楼</td>
+                <td>89万</td>
+                <td>89万</td>
+                <td>9,685元/平</td>
+                <td>0</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111770884.html" target="_blank">https://zz.lianjia.com/ershoufang/104111770884.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>朝南向大两居中层视野开阔采光好</td>
+                <td>3室2厅|107.89平米|南西南|其他|中楼层(共22层)|板楼</td>
+                <td>92万</td>
+                <td>92万</td>
+                <td>8,528元/平</td>
+                <td>1</td>
+                <td>建设西路169号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111405697.html" target="_blank">https://zz.lianjia.com/ershoufang/104111405697.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新禧园3室2厅东南</td>
+                <td>3室2厅|107.61平米|东南|简装|中楼层(共18层)|板塔结合</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>10,223元/平</td>
+                <td>1</td>
+                <td>新禧园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112550346.html" target="_blank">https://zz.lianjia.com/ershoufang/104112550346.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区临地铁楼层采光好次新小区临地铁楼好</td>
+                <td>3室1厅|89.13平米|南|精装|中楼层(共33层)|板楼</td>
+                <td>101万</td>
+                <td>101万</td>
+                <td>11,332元/平</td>
+                <td>1</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112321943.html" target="_blank">https://zz.lianjia.com/ershoufang/104112321943.html</a></td>
+                <td>链家</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>升降标志</th>
+                <th>房屋名</th>
+                <th>房屋备注</th>
+                <th>房屋总价</th>
+                <th>房屋历史总价</th>
+                <th>房屋单价</th>
+                <th>关注人数</th>
+                <th>小区名</th>
+                <th>房屋链接</th>
+                <th>来源网站</th>
+            </tr>
+            </tfoot>
+        </table><br>
+
+        <h2>较上7天</h2>
+        <table id="day7" class="display" style="width:100%">
+            <thead>
+            <tr>
+                <th>升降标志</th>
+                <th>房屋名</th>
+                <th>房屋备注</th>
+                <th>房屋总价</th>
+                <th>房屋历史总价</th>
+                <th>房屋单价</th>
+                <th>关注人数</th>
+                <th>小区名</th>
+                <th>房屋链接</th>
+                <th>来源网站</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>新增</td>
+                <td>电力小区 三居 好楼层  淮河路73</td>
+                <td>中楼层(共6层)|1998年|3室2厅|94.06平米|南北</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>12,758元/平</td>
+                <td>12</td>
+                <td>电力C区332号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112036537.html" target="_blank">https://zz.ke.com/ershoufang/104112036537.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>工人路187号，双气小三房，东南朝向采光好，拎包入住</td>
+                <td>中楼层(共32层)|2012年|3室1厅|94.91平米|南</td>
+                <td>104.8万</td>
+                <td>-</td>
+                <td>11,043元/平</td>
+                <td>25</td>
+                <td>工人路187号</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111880815.html" target="_blank">https://zz.ke.com/ershoufang/104111880815.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三开间朝南，满五唯一，精装，可以拎包入住</td>
+                <td>中楼层(共6层)|2004年|3室2厅|107.99平米|南北</td>
+                <td>95万</td>
+                <td>-</td>
+                <td>8,798元/平</td>
+                <td>5</td>
+                <td>豫花园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112675962.html" target="_blank">https://zz.ke.com/ershoufang/104112675962.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三环内 多层社区 南北通透  多层得房率高</td>
+                <td>中楼层(共6层)|2007年|3室2厅|104.27平米|南北</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>11,509元/平</td>
+                <td>0</td>
+                <td>威尼斯水城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112630162.html" target="_blank">https://zz.ke.com/ershoufang/104112630162.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>万达旁 二砂文创园 南边通透三房 纯毛坯次新房</td>
+                <td>中楼层(共28层)3室2厅|101.41平米|南东</td>
+                <td>113万</td>
+                <td>-</td>
+                <td>11,143元/平</td>
+                <td>7</td>
+                <td>阳光城丽景公馆北苑</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112312197.html" target="_blank">https://zz.ke.com/ershoufang/104112312197.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>泰宏阳光景苑 3室1厅 南</td>
+                <td>中楼层(共33层)|2012年|3室1厅|94.68平米|南</td>
+                <td>95万</td>
+                <td>-</td>
+                <td>10,034元/平</td>
+                <td>2</td>
+                <td>泰宏阳光景苑</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112121822.html" target="_blank">https://zz.ke.com/ershoufang/104112121822.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>公园道三期 全南三居 满五唯一 中间层 邻地铁</td>
+                <td>中楼层(共33层)|2017年|3室1厅|87.92平米|南</td>
+                <td>115万</td>
+                <td>-</td>
+                <td>13,081元/平</td>
+                <td>15</td>
+                <td>朗悦公园道1号誉园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111402866.html" target="_blank">https://zz.ke.com/ershoufang/104111402866.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>公园道三房纯边户，全明户型，采光视野好。</td>
+                <td>中楼层(共32层)|2022年|3室2厅|87.25平米|南北</td>
+                <td>116万</td>
+                <td>-</td>
+                <td>13,296元/平</td>
+                <td>24</td>
+                <td>朗悦公园道1号熙园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110167327.html" target="_blank">https://zz.ke.com/ershoufang/104110167327.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>郑大旁地铁口、满五唯一、双气、精装修小三房</td>
+                <td>中楼层(共20层)|2016年|3室2厅|87.18平米|南</td>
+                <td>96万</td>
+                <td>-</td>
+                <td>11,012元/平</td>
+                <td>10</td>
+                <td>谦祥万和城三期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110730887.html" target="_blank">https://zz.ke.com/ershoufang/104110730887.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>地铁口 纯南精装小三房 业主诚心出售 看房提前约</td>
+                <td>中楼层(共27层)|2016年|3室2厅|86.96平米|南西南</td>
+                <td>88万</td>
+                <td>-</td>
+                <td>10,120元/平</td>
+                <td>33</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104105073802.html" target="_blank">https://zz.ke.com/ershoufang/104105073802.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>万和城 地铁口  精装修 无遮挡 标准三居</td>
+                <td>中楼层(共34层)|2016年|3室2厅|89.04平米|南</td>
+                <td>89万</td>
+                <td>-</td>
+                <td>9,996元/平</td>
+                <td>1</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112716019.html" target="_blank">https://zz.ke.com/ershoufang/104112716019.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>升龙又一城三号院92平边户三房中间楼层</td>
+                <td>中楼层(共24层)|2016年|3室2厅|92.3平米|南</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>13,002元/平</td>
+                <td>1</td>
+                <td>升龙又一城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111849152.html" target="_blank">https://zz.ke.com/ershoufang/104111849152.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三环内 地铁口 人车分流 年代新 双气 楼层好 视野开阔</td>
+                <td>中楼层(共34层)|2017年|3室2厅|89.99平米|南</td>
+                <td>104万</td>
+                <td>-</td>
+                <td>11,557元/平</td>
+                <td>32</td>
+                <td>和润林湖美景</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108578206.html" target="_blank">https://zz.ke.com/ershoufang/104108578206.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>贝壳优选不临高架南北通透小三房采光好</td>
+                <td>3室2厅|88.15平米|南北|精装|中楼层(共34层)|板塔结合</td>
+                <td>118万</td>
+                <td>-</td>
+                <td>13,387元/平</td>
+                <td>4</td>
+                <td>和昌湾景国际</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111889962.html" target="_blank">https://zz.lianjia.com/ershoufang/104111889962.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装三居，房东诚心卖，楼栋位置好，视野采光都不错</td>
+                <td>3室1厅|89.48平米|西南|精装|中楼层(共33层)|板楼</td>
+                <td>103万</td>
+                <td>-</td>
+                <td>11,511元/平</td>
+                <td>1</td>
+                <td>紫韵丽园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111984471.html" target="_blank">https://zz.lianjia.com/ershoufang/104111984471.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>73双气小高层通透3室出行便利随时看房</td>
+                <td>3室1厅|103.53平米|南北|简装|中楼层(共18层)|板塔结合</td>
+                <td>88万</td>
+                <td>-</td>
+                <td>8,500元/平</td>
+                <td>1</td>
+                <td>聚龙花园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110183771.html" target="_blank">https://zz.lianjia.com/ershoufang/104110183771.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>湖光新苑双气地暖小区小高层小三房</td>
+                <td>3室1厅|89.84平米|南北|简装|中楼层(共11层)|板塔结合</td>
+                <td>82万</td>
+                <td>-</td>
+                <td>9,128元/平</td>
+                <td>1</td>
+                <td>湖光新苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111766232.html" target="_blank">https://zz.lianjia.com/ershoufang/104111766232.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>工人路187号，双气小三房，东南朝向采光好，拎包入住</td>
+                <td>3室1厅|94.91平米|南|精装|中楼层(共32层)|板楼</td>
+                <td>104.8万</td>
+                <td>-</td>
+                <td>11,043元/平</td>
+                <td>3</td>
+                <td>工人路187号</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111880815.html" target="_blank">https://zz.lianjia.com/ershoufang/104111880815.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>客厅带阳台的二环边小三房光线视野好2016年人车分流</td>
+                <td>3室1厅|88.78平米|南西|精装|中楼层(共32层)|板塔结合</td>
+                <td>100万</td>
+                <td>-</td>
+                <td>11,264元/平</td>
+                <td>4</td>
+                <td>升龙天汇3号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111688405.html" target="_blank">https://zz.lianjia.com/ershoufang/104111688405.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>标准小三房精装修楼层好看房方便</td>
+                <td>3室2厅|85.4平米|南北|精装|中楼层(共34层)|板塔结合</td>
+                <td>100万</td>
+                <td>-</td>
+                <td>11,710元/平</td>
+                <td>1</td>
+                <td>盛润锦绣城东院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104109998161.html" target="_blank">https://zz.lianjia.com/ershoufang/104109998161.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>二环边五号线地铁口改善小区电梯双气新装修舒适三房</td>
+                <td>3室2厅|96.22平米|南西|简装|中楼层(共34层)|塔楼</td>
+                <td>113万</td>
+                <td>-</td>
+                <td>11,744元/平</td>
+                <td>7</td>
+                <td>升龙御玺</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111343093.html" target="_blank">https://zz.lianjia.com/ershoufang/104111343093.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>奥体旁双外国语经典小三房诚心卖房</td>
+                <td>3室2厅|90.97平米|南|其他|中楼层(共34层)|暂无数据</td>
+                <td>109万</td>
+                <td>-</td>
+                <td>11,982元/平</td>
+                <td>2</td>
+                <td>融信望湖宸院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112255166.html" target="_blank">https://zz.lianjia.com/ershoufang/104112255166.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>教师家属院，精装步梯多层三房，采光好，小院静谧</td>
+                <td>3室1厅|89.09平米|东南北|精装|中楼层(共7层)|板楼</td>
+                <td>88万</td>
+                <td>-</td>
+                <td>9,878元/平</td>
+                <td>3</td>
+                <td>中原区教师住宅小区</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112660701.html" target="_blank">https://zz.lianjia.com/ershoufang/104112660701.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>优选好房，不临高架，好楼层，随时可以看房</td>
+                <td>3室2厅|88.47平米|南|其他|中楼层(共34层)|塔楼</td>
+                <td>105万</td>
+                <td>-</td>
+                <td>11,869元/平</td>
+                <td>0</td>
+                <td>景悦城2号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112685314.html" target="_blank">https://zz.lianjia.com/ershoufang/104112685314.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>这个户型很哇塞装修也不赖业主也诚心卖来看看呗</td>
+                <td>3室2厅|98.9平米|南西南|精装|中楼层(共33层)|板塔结合</td>
+                <td>118万</td>
+                <td>-</td>
+                <td>11,932元/平</td>
+                <td>3</td>
+                <td>升龙天汇3号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112499128.html" target="_blank">https://zz.lianjia.com/ershoufang/104112499128.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>正大·美丽泉3室1厅南北</td>
+                <td>3室1厅|91.83平米|南北|精装|中楼层(共26层)|板楼</td>
+                <td>96万</td>
+                <td>-</td>
+                <td>10,455元/平</td>
+                <td>2</td>
+                <td>正大·美丽泉</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112139365.html" target="_blank">https://zz.lianjia.com/ershoufang/104112139365.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>公园旁次新小区通透三房满五唯一</td>
+                <td>3室2厅|92.38平米|南北|精装|中楼层(共34层)|板楼</td>
+                <td>98万</td>
+                <td>-</td>
+                <td>10,609元/平</td>
+                <td>0</td>
+                <td>栖湖怡家</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112131599.html" target="_blank">https://zz.lianjia.com/ershoufang/104112131599.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>泰宏阳光景苑3室1厅南</td>
+                <td>3室1厅|94.68平米|南|其他|33层|塔楼</td>
+                <td>95万</td>
+                <td>-</td>
+                <td>10,034元/平</td>
+                <td>0</td>
+                <td>泰宏阳光景苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112121822.html" target="_blank">https://zz.lianjia.com/ershoufang/104112121822.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>金三环运河旁万达广场次新房不临高架人车分流</td>
+                <td>3室2厅|92.74平米|南|其他|中楼层(共34层)|塔楼</td>
+                <td>116万</td>
+                <td>-</td>
+                <td>12,509元/平</td>
+                <td>1</td>
+                <td>景悦城2号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112031155.html" target="_blank">https://zz.lianjia.com/ershoufang/104112031155.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>好户型万科品质采光好业主诚心卖</td>
+                <td>3室2厅|93.19平米|南|其他|中楼层(共33层)|板楼</td>
+                <td>113万</td>
+                <td>-</td>
+                <td>12,126元/平</td>
+                <td>0</td>
+                <td>万科城湖心岛</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110068145.html" target="_blank">https://zz.lianjia.com/ershoufang/104110068145.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>公园道三期全南三居满五唯一中间层邻地铁</td>
+                <td>3室1厅|87.92平米|南|简装|中楼层(共33层)|板塔结合</td>
+                <td>115万</td>
+                <td>-</td>
+                <td>13,081元/平</td>
+                <td>0</td>
+                <td>朗悦公园道1号誉园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111402866.html" target="_blank">https://zz.lianjia.com/ershoufang/104111402866.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>地铁口纯南精装小三房业主诚心出售看房提前约</td>
+                <td>3室2厅|86.96平米|南西南|精装|中楼层(共27层)|板楼</td>
+                <td>88万</td>
+                <td>-</td>
+                <td>10,120元/平</td>
+                <td>22</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104105073802.html" target="_blank">https://zz.lianjia.com/ershoufang/104105073802.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>郑大旁地铁口、满五唯一、双气、精装修小三房</td>
+                <td>3室2厅|87.18平米|南|精装|中楼层(共20层)|板楼</td>
+                <td>96万</td>
+                <td>-</td>
+                <td>11,012元/平</td>
+                <td>1</td>
+                <td>谦祥万和城三期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110730887.html" target="_blank">https://zz.lianjia.com/ershoufang/104110730887.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>万科城秋棠苑中楼层，全屋定制业主自住看房方便</td>
+                <td>3室2厅|88.24平米|南|精装|中楼层(共34层)|板塔结合</td>
+                <td>85万</td>
+                <td>-</td>
+                <td>9,633元/平</td>
+                <td>3</td>
+                <td>万科城秋棠苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108393024.html" target="_blank">https://zz.lianjia.com/ershoufang/104108393024.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>地铁口，南北，通透户型，中间楼层，采光棒，</td>
+                <td>3室2厅|89.85平米|南北|其他|中楼层(共34层)|板楼</td>
+                <td>95万</td>
+                <td>-</td>
+                <td>10,574元/平</td>
+                <td>0</td>
+                <td>万科城紫兰苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111731828.html" target="_blank">https://zz.lianjia.com/ershoufang/104111731828.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>公园道1号北苑，精装修，朝南3房，采光好</td>
+                <td>3室2厅|90.43平米|南|精装|中楼层(共27层)|板塔结合</td>
+                <td>103万</td>
+                <td>-</td>
+                <td>11,391元/平</td>
+                <td>0</td>
+                <td>朗悦公园道1号北苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112223769.html" target="_blank">https://zz.lianjia.com/ershoufang/104112223769.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>工大旁舒适3房精装修业主诚售</td>
+                <td>3室2厅|103.65平米|南北|精装|中楼层(共33层)|板楼</td>
+                <td>112万</td>
+                <td>-</td>
+                <td>10,806元/平</td>
+                <td>1</td>
+                <td>荣邦城</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112541507.html" target="_blank">https://zz.lianjia.com/ershoufang/104112541507.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>东原阅城一期精装三房便宜出售</td>
+                <td>3室2厅|88.68平米|南|其他|中楼层(共31层)|板楼</td>
+                <td>106万</td>
+                <td>-</td>
+                <td>11,954元/平</td>
+                <td>0</td>
+                <td>东原阅城一期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112679982.html" target="_blank">https://zz.lianjia.com/ershoufang/104112679982.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>此房满五唯一，中间楼层，配套设施齐全，小区绿化好</td>
+                <td>3室2厅|88.32平米|南|其他|中楼层(共34层)|板楼</td>
+                <td>95万</td>
+                <td>-</td>
+                <td>10,757元/平</td>
+                <td>0</td>
+                <td>保利永威西溪花园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112635401.html" target="_blank">https://zz.lianjia.com/ershoufang/104112635401.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>业主急售，大三房，中间楼层，采光充足，配套齐全。</td>
+                <td>3室2厅|103.35平米|南西|简装|中楼层(共34层)|板塔结合</td>
+                <td>84.5万</td>
+                <td>-</td>
+                <td>8,177元/平</td>
+                <td>10</td>
+                <td>祝福红城二期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112258070.html" target="_blank">https://zz.lianjia.com/ershoufang/104112258070.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>次新小区全款房中间楼层采光好随时看房</td>
+                <td>3室1厅|95.61平米|南|其他|中楼层(共33层)|板楼</td>
+                <td>117万</td>
+                <td>-</td>
+                <td>12,238元/平</td>
+                <td>0</td>
+                <td>万科城湖心岛</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112510683.html" target="_blank">https://zz.lianjia.com/ershoufang/104112510683.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>老铁此房牛B郑大旁地铁口好户型价格便宜</td>
+                <td>3室2厅|88.12平米|南|简装|中楼层(共33层)|板楼</td>
+                <td>84.5万</td>
+                <td>-</td>
+                <td>9,590元/平</td>
+                <td>2</td>
+                <td>裕华满园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112514302.html" target="_blank">https://zz.lianjia.com/ershoufang/104112514302.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装修全新未入住网红楼盘</td>
+                <td>3室2厅|89.8平米|南|其他|中楼层(共33层)|板楼</td>
+                <td>102万</td>
+                <td>-</td>
+                <td>11,359元/平</td>
+                <td>0</td>
+                <td>大正水晶森林</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112625253.html" target="_blank">https://zz.lianjia.com/ershoufang/104112625253.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>中间好楼层前面没有遮挡南北通透采光好</td>
+                <td>3室2厅|107.71平米|南北|其他|中楼层(共34层)|板塔结合</td>
+                <td>109万</td>
+                <td>-</td>
+                <td>10,120元/平</td>
+                <td>1</td>
+                <td>祝福红城四期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112651341.html" target="_blank">https://zz.lianjia.com/ershoufang/104112651341.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>正弘数码港，双气电梯房，两梯四户，通透采光好</td>
+                <td>3室2厅|89.81平米|南|其他|中楼层(共32层)|板塔结合</td>
+                <td>120万</td>
+                <td>-</td>
+                <td>13,362元/平</td>
+                <td>0</td>
+                <td>正弘高新数码港</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112663276.html" target="_blank">https://zz.lianjia.com/ershoufang/104112663276.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>网红小区奶油风精装修全新未入住中间层随时可看房</td>
+                <td>3室2厅|89.79平米|南北|精装|中楼层(共33层)|板楼</td>
+                <td>116.5万</td>
+                <td>-</td>
+                <td>12,975元/平</td>
+                <td>1</td>
+                <td>大正水晶森林</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112182421.html" target="_blank">https://zz.lianjia.com/ershoufang/104112182421.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>河工大东邻.含车位.2梯4户小高层.中间楼栋.满五唯一</td>
+                <td>3室2厅|90平米|南北|精装|中楼层(共18层)|板楼</td>
+                <td>108万</td>
+                <td>-</td>
+                <td>12,000元/平</td>
+                <td>1</td>
+                <td>荣邦城中区</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112092104.html" target="_blank">https://zz.lianjia.com/ershoufang/104112092104.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装修，地铁口，中间楼层，人车分流，看房方便采光棒</td>
+                <td>3室1厅|88.13平米|南|简装|中楼层(共34层)|板楼</td>
+                <td>85万</td>
+                <td>-</td>
+                <td>9,645元/平</td>
+                <td>2</td>
+                <td>万科城秋棠苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112191097.html" target="_blank">https://zz.lianjia.com/ershoufang/104112191097.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>低密度小高层格局好户型佳</td>
+                <td>3室2厅|88.75平米|南|精装|中楼层(共18层)|板楼</td>
+                <td>113万</td>
+                <td>-</td>
+                <td>12,733元/平</td>
+                <td>0</td>
+                <td>荣邦城中区</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112166671.html" target="_blank">https://zz.lianjia.com/ershoufang/104112166671.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>带车位全新未入住不临路好楼层有房本随时可以看</td>
+                <td>3室2厅|94.89平米|南|精装|中楼层(共34层)|板楼</td>
+                <td>118万</td>
+                <td>-</td>
+                <td>12,436元/平</td>
+                <td>2</td>
+                <td>万科城湖心岛</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112119790.html" target="_blank">https://zz.lianjia.com/ershoufang/104112119790.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>三环内地铁口人车分流年代新双气楼层好视野开阔</td>
+                <td>3室2厅|89.99平米|南|精装|中楼层(共34层)|板楼</td>
+                <td>104万</td>
+                <td>-</td>
+                <td>11,557元/平</td>
+                <td>13</td>
+                <td>和润林湖美景</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108578206.html" target="_blank">https://zz.lianjia.com/ershoufang/104108578206.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>三环内，满两年，新小区，正弘物业，人车分流</td>
+                <td>中楼层(共34层)|2021年|3室1厅|101.16平米|东北</td>
+                <td>114万</td>
+                <td>117万</td>
+                <td>11,270元/平</td>
+                <td>12</td>
+                <td>金水世纪城</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112215001.html" target="_blank">https://zz.ke.com/ershoufang/104112215001.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>优质小三房，好楼层，南边无遮挡，采光充足。</td>
+                <td>中楼层(共33层)|2016年|3室1厅|82.31平米|南</td>
+                <td>82.5万</td>
+                <td>84万</td>
+                <td>10,024元/平</td>
+                <td>45</td>
+                <td>新芒果春天苑</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110982372.html" target="_blank">https://zz.ke.com/ershoufang/104110982372.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>谦祥万和城 朝南三室 契税满2年 采光充足 看房方便</td>
+                <td>中楼层(共34层)|2016年|3室2厅|86.23平米|东南</td>
+                <td>84万</td>
+                <td>85万</td>
+                <td>9,742元/平</td>
+                <td>5</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112553556.html" target="_blank">https://zz.ke.com/ershoufang/104112553556.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>工大旁，好楼层，满五不唯一的南北通透三居</td>
+                <td>3室2厅|104.09平米|南北|毛坯|中楼层(共33层)|板楼</td>
+                <td>100万</td>
+                <td>108万</td>
+                <td>9,608元/平</td>
+                <td>2</td>
+                <td>荣邦城</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111440159.html" target="_blank">https://zz.lianjia.com/ershoufang/104111440159.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>优质小三房，好楼层，南边无遮挡，采光充足。</td>
+                <td>3室1厅|82.31平米|南|简装|中楼层(共33层)|板楼</td>
+                <td>82.5万</td>
+                <td>84万</td>
+                <td>10,024元/平</td>
+                <td>6</td>
+                <td>新芒果春天苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110982372.html" target="_blank">https://zz.lianjia.com/ershoufang/104110982372.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>公园旁 次新小区  通透三房  满五唯一</td>
+                <td>中楼层(共34层)|2016年|3室2厅|92.38平米|南北</td>
+                <td>98万</td>
+                <td>95万</td>
+                <td>10,609元/平</td>
+                <td>6</td>
+                <td>栖湖怡家</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112131599.html" target="_blank">https://zz.ke.com/ershoufang/104112131599.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>五龙口环境比较好的社区物业好自住精装诚心卖</td>
+                <td>3室2厅|89.31平米|南|简装|中楼层(共32层)|塔楼</td>
+                <td>99.9万</td>
+                <td>105万</td>
+                <td>11,186元/平</td>
+                <td>1</td>
+                <td>城开绿城绿园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112653007.html" target="_blank">https://zz.lianjia.com/ershoufang/104112653007.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>这个户型很哇塞 装修也不赖 业主也诚心卖 来看看呗</td>
+                <td>中楼层(共33层)|2016年|3室2厅|98.9平米|南西南</td>
+                <td>118万</td>
+                <td>118万</td>
+                <td>11,932元/平</td>
+                <td>40</td>
+                <td>升龙天汇3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112499128.html" target="_blank">https://zz.ke.com/ershoufang/104112499128.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>奥体旁 双外国语 经典小三房  诚心卖房</td>
+                <td>中楼层(共34层)|2022年|3室2厅|90.97平米|南</td>
+                <td>109万</td>
+                <td>109万</td>
+                <td>11,982元/平</td>
+                <td>6</td>
+                <td>融信望湖宸院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112255166.html" target="_blank">https://zz.ke.com/ershoufang/104112255166.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>精装修大三房，业主诚心出售，看房方便</td>
+                <td>中楼层(共34层)|2018年|3室2厅|107.73平米|南北</td>
+                <td>96万</td>
+                <td>96万</td>
+                <td>8,912元/平</td>
+                <td>14</td>
+                <td>汇泉城一号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112254294.html" target="_blank">https://zz.ke.com/ershoufang/104112254294.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>育才 南北通透三房业主诚意出售</td>
+                <td>中楼层(共7层)3室2厅|104.49平米|南北</td>
+                <td>101万</td>
+                <td>101万</td>
+                <td>9,666元/平</td>
+                <td>0</td>
+                <td>正功花园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112644449.html" target="_blank">https://zz.ke.com/ershoufang/104112644449.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>二环！109平三房！急卖！！！</td>
+                <td>中楼层(共7层)|2001年|3室1厅|109.01平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>10,550元/平</td>
+                <td>1</td>
+                <td>开元新城</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112641622.html" target="_blank">https://zz.ke.com/ershoufang/104112641622.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新禧园 3室2厅 东 南</td>
+                <td>中楼层(共18层)|2011年|3室2厅|107.61平米|东南</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>10,223元/平</td>
+                <td>3</td>
+                <td>新禧园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112550346.html" target="_blank">https://zz.ke.com/ershoufang/104112550346.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>南北通透大三室 精装修 中间楼层采光充足</td>
+                <td>中楼层(共34层)|2019年|3室2厅|109.18平米|南北</td>
+                <td>93万</td>
+                <td>93万</td>
+                <td>8,519元/平</td>
+                <td>9</td>
+                <td>汇泉城5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112538910.html" target="_blank">https://zz.ke.com/ershoufang/104112538910.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>西城社区，08年，多层房子，有固定车位，房东诚心出售</td>
+                <td>中楼层(共7层)|2008年|3室2厅|101.62平米|南北</td>
+                <td>93万</td>
+                <td>93万</td>
+                <td>9,152元/平</td>
+                <td>2</td>
+                <td>茜城社区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112532016.html" target="_blank">https://zz.ke.com/ershoufang/104112532016.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>华淮小区南院 3室2厅 南 北</td>
+                <td>中楼层(共7层)|1996年|3室2厅|109.94平米|南北</td>
+                <td>88万</td>
+                <td>88万</td>
+                <td>8,005元/平</td>
+                <td>2</td>
+                <td>华淮小区南院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112490100.html" target="_blank">https://zz.ke.com/ershoufang/104112490100.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>诚心出售好楼层视野采光很好优选好房</td>
+                <td>中楼层(共34层)|2022年|3室2厅|90.95平米|南</td>
+                <td>102.8万</td>
+                <td>102.8万</td>
+                <td>11,303元/平</td>
+                <td>3</td>
+                <td>汇泉景悦城1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112404540.html" target="_blank">https://zz.ke.com/ershoufang/104112404540.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万达旁 精装3房 拎包入住 采光视野好 不临高价</td>
+                <td>中楼层(共33层)|2012年|3室2厅|107.31平米|南</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>11,183元/平</td>
+                <td>1</td>
+                <td>泰宏阳光景苑</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112348430.html" target="_blank">https://zz.ke.com/ershoufang/104112348430.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>精装大三室 不临高架 南北通透 采光很好</td>
+                <td>中楼层(共34层)|2018年|3室2厅|107.39平米|南北</td>
+                <td>104万</td>
+                <td>104万</td>
+                <td>9,685元/平</td>
+                <td>4</td>
+                <td>汇泉城一号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112327061.html" target="_blank">https://zz.ke.com/ershoufang/104112327061.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>位置安静 不临高架 号楼层 采光好 业主诚心出售</td>
+                <td>中楼层(共34层)|2019年|3室2厅|108.33平米|南北</td>
+                <td>99万</td>
+                <td>99万</td>
+                <td>9,139元/平</td>
+                <td>0</td>
+                <td>汇泉城5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112312689.html" target="_blank">https://zz.ke.com/ershoufang/104112312689.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>【贝壳优选】户型方正 中间好楼层 地铁口</td>
+                <td>中楼层(共34层)|2022年|3室2厅|90.62平米|南</td>
+                <td>113万</td>
+                <td>113万</td>
+                <td>12,470元/平</td>
+                <td>5</td>
+                <td>融信望湖宸院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112262171.html" target="_blank">https://zz.ke.com/ershoufang/104112262171.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万达商圈 全明户型 绿化好 人车分流 年代新 出行方便</td>
+                <td>中楼层(共34层)|2021年|3室2厅|98.41平米|南</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>10,670元/平</td>
+                <td>5</td>
+                <td>景悦城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112253776.html" target="_blank">https://zz.ke.com/ershoufang/104112253776.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>大三房 采光充足 诚心出售 看房方便</td>
+                <td>中楼层(共33层)|2018年|3室2厅|107.95平米|南北</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>10,654元/平</td>
+                <td>2</td>
+                <td>世纪景园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112228700.html" target="_blank">https://zz.ke.com/ershoufang/104112228700.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>奥体旁，地铁口，全明小三房，业主诚心出售，人车分流</td>
+                <td>中楼层(共34层)|2021年|3室2厅|99.41平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>11,569元/平</td>
+                <td>1</td>
+                <td>景悦城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112212700.html" target="_blank">https://zz.ke.com/ershoufang/104112212700.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>西三环万达旁，全明户型，人车分流，年代新</td>
+                <td>中楼层(共34层)|2001年|3室2厅|98.41平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>11,686元/平</td>
+                <td>0</td>
+                <td>景悦城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112212636.html" target="_blank">https://zz.ke.com/ershoufang/104112212636.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>多层三楼，双气，可贷款，大三室，诚心出售，看房方便</td>
+                <td>中楼层(共7层)3室1厅|108.86平米|南北</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>10,105元/平</td>
+                <td>1</td>
+                <td>市场街74-82号</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112209927.html" target="_blank">https://zz.ke.com/ershoufang/104112209927.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万达商圈 年代新 人车分流 绿化好 全明户型 出行方便</td>
+                <td>中楼层(共23层)|2021年|3室2厅|98.67平米|南</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>10,642元/平</td>
+                <td>13</td>
+                <td>景悦城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112182332.html" target="_blank">https://zz.ke.com/ershoufang/104112182332.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>西站住宅小区 边户三房 采光好 户型好 位置好</td>
+                <td>中楼层(共7层)3室2厅|93.19平米|南</td>
+                <td>98万</td>
+                <td>98万</td>
+                <td>10,517元/平</td>
+                <td>2</td>
+                <td>西站路住宅小区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112144664.html" target="_blank">https://zz.ke.com/ershoufang/104112144664.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>中原路十号线多层三居室出售满五年随时看房</td>
+                <td>中楼层(共6层)|2004年|3室2厅|109.61平米|南北</td>
+                <td>96万</td>
+                <td>96万</td>
+                <td>8,759元/平</td>
+                <td>6</td>
+                <td>茜城五月天</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112144089.html" target="_blank">https://zz.ke.com/ershoufang/104112144089.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>翰林国际桃李园满两年精装修 看房方便 业主诚心出售。</td>
+                <td>中楼层(共33层)|2017年|3室2厅|94.26平米|南北</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>11,670元/平</td>
+                <td>29</td>
+                <td>翰林国际城桃李园小区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110142006.html" target="_blank">https://zz.ke.com/ershoufang/104110142006.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>17年次新小区，邻郑大河工大，一号地铁口河南工业大学</td>
+                <td>中楼层(共33层)|2017年|3室2厅|92.81平米|南</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>12,930元/平</td>
+                <td>0</td>
+                <td>翰林国际城桃李园小区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112504703.html" target="_blank">https://zz.ke.com/ershoufang/104112504703.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>升龙又一城  三房  南户 看房方便</td>
+                <td>中楼层(共32层)|2016年|3室2厅|90.67平米|南北</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>9,927元/平</td>
+                <td>1</td>
+                <td>升龙又一城AB区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112485094.html" target="_blank">https://zz.ke.com/ershoufang/104112485094.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>郑大旁  地铁口  采光刺眼 好户型</td>
+                <td>中楼层(共33层)|2018年|3室2厅|87.91平米|南</td>
+                <td>92万</td>
+                <td>92万</td>
+                <td>10,466元/平</td>
+                <td>4</td>
+                <td>裕华满园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112465758.html" target="_blank">https://zz.ke.com/ershoufang/104112465758.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>业主诚售，中间楼层，采光好，无遮挡</td>
+                <td>中楼层(共34层)|2016年|3室2厅|89.67平米|南</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>11,710元/平</td>
+                <td>4</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112445033.html" target="_blank">https://zz.ke.com/ershoufang/104112445033.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口 纯南小三房 精装修拎包入住 看房方便</td>
+                <td>中楼层(共34层)|2015年|3室2厅|90.07平米|南</td>
+                <td>92万</td>
+                <td>92万</td>
+                <td>10,215元/平</td>
+                <td>3</td>
+                <td>谦祥万和城一期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112437287.html" target="_blank">https://zz.ke.com/ershoufang/104112437287.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满二，简单装修，家里老人居住，看房方便</td>
+                <td>中楼层(共18层)|2012年|3室2厅|90.71平米|东东南</td>
+                <td>86万</td>
+                <td>86万</td>
+                <td>9,481元/平</td>
+                <td>3</td>
+                <td>祝福红城一期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112366920.html" target="_blank">https://zz.ke.com/ershoufang/104112366920.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>网红盘，三面朝南，面=面211大学，2019年新房</td>
+                <td>中楼层(共33层)|2018年|3室2厅|88.27平米|南北</td>
+                <td>99万</td>
+                <td>99万</td>
+                <td>11,216元/平</td>
+                <td>3</td>
+                <td>裕华满园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112343858.html" target="_blank">https://zz.ke.com/ershoufang/104112343858.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>升龙又一城  1号线地铁口 精装修 业主急售</td>
+                <td>中楼层(共32层)|2016年|3室2厅|90.4平米|南</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,509元/平</td>
+                <td>4</td>
+                <td>升龙又一城AB区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112330497.html" target="_blank">https://zz.ke.com/ershoufang/104112330497.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>双地铁口南北通透三居室，业主自住，精装修</td>
+                <td>中楼层(共32层)|2016年|3室2厅|99.19平米|南北</td>
+                <td>119万</td>
+                <td>119万</td>
+                <td>11,998元/平</td>
+                <td>5</td>
+                <td>升龙又一城AB区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112295422.html" target="_blank">https://zz.ke.com/ershoufang/104112295422.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>郑大旁、地铁口、满五年、双气精装修小三房</td>
+                <td>中楼层(共34层)|2016年|3室2厅|86.85平米|南</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,939元/平</td>
+                <td>6</td>
+                <td>谦祥万和城三期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112267992.html" target="_blank">https://zz.ke.com/ershoufang/104112267992.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>此房业主诚心出售，采光充足，满五不唯一。有电梯</td>
+                <td>中楼层(共25层)|2014年|3室1厅|104.04平米|东南</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>8,651元/平</td>
+                <td>2</td>
+                <td>基正盛世港湾</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112251117.html" target="_blank">https://zz.ke.com/ershoufang/104112251117.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>楼层好 视野开阔 采光充足  地铁口 大学旁</td>
+                <td>中楼层(共33层)|2017年|3室2厅|92.81平米|南</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>11,853元/平</td>
+                <td>12</td>
+                <td>翰林国际城桃李园小区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112156130.html" target="_blank">https://zz.ke.com/ershoufang/104112156130.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>郑大旁地铁口万和城次新社区3室2厅好楼层拎包入住</td>
+                <td>中楼层(共34层)|2015年|3室2厅|88.61平米|南</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>13,543元/平</td>
+                <td>0</td>
+                <td>谦祥万和城一期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112089880.html" target="_blank">https://zz.ke.com/ershoufang/104112089880.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五唯一 楼层好 百米楼间距 正看小区花园</td>
+                <td>中楼层(共34层)|2016年|3室1厅|87.27平米|南</td>
+                <td>85万</td>
+                <td>85万</td>
+                <td>9,740元/平</td>
+                <td>3</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112076293.html" target="_blank">https://zz.ke.com/ershoufang/104112076293.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>配套设施齐全，交通便利，1号线地铁口</td>
+                <td>中楼层(共27层)|2016年|3室2厅|86.96平米|东南</td>
+                <td>96.8万</td>
+                <td>96.8万</td>
+                <td>11,132元/平</td>
+                <td>0</td>
+                <td>谦祥万和城二期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112072573.html" target="_blank">https://zz.ke.com/ershoufang/104112072573.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>高新郑大网红盘，采光刺眼，三面有阳光</td>
+                <td>中楼层(共33层)|2018年|3室2厅|91.43平米|南</td>
+                <td>118万</td>
+                <td>118万</td>
+                <td>12,907元/平</td>
+                <td>0</td>
+                <td>裕华满园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111966924.html" target="_blank">https://zz.ke.com/ershoufang/104111966924.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>工大地铁口 客厅带阳台 纯南户三房</td>
+                <td>中楼层(共20层)|2016年|3室1厅|88.57平米|南</td>
+                <td>98万</td>
+                <td>98万</td>
+                <td>11,065元/平</td>
+                <td>3</td>
+                <td>谦祥万和城三期</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111964369.html" target="_blank">https://zz.ke.com/ershoufang/104111964369.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>郑大旁  地铁口   优质小三房   采光好</td>
+                <td>中楼层(共33层)|2018年|3室2厅|88.11平米|南</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>10,215元/平</td>
+                <td>6</td>
+                <td>裕华满园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111955109.html" target="_blank">https://zz.ke.com/ershoufang/104111955109.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五年  双气 双地铁口 精装修 南北通透三房</td>
+                <td>中楼层(共26层)|2016年|3室2厅|93.89平米|南北</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>12,781元/平</td>
+                <td>6</td>
+                <td>升龙又一城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111915590.html" target="_blank">https://zz.ke.com/ershoufang/104111915590.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五年小区，双地铁双气南北向户型，精装三房。</td>
+                <td>中楼层(共27层)|2016年|3室2厅|93.89平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>12,249元/平</td>
+                <td>2</td>
+                <td>升龙又一城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111878443.html" target="_blank">https://zz.ke.com/ershoufang/104111878443.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁小三房好楼层采光通风视野好次新小区</td>
+                <td>中楼层(共26层)|2016年|3室1厅|94平米|南</td>
+                <td>91万</td>
+                <td>91万</td>
+                <td>9,681元/平</td>
+                <td>6</td>
+                <td>升龙又一城3号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111859899.html" target="_blank">https://zz.ke.com/ershoufang/104111859899.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内地铁口 品质小区 精装小三房朝南户型 拎包入住</td>
+                <td>中楼层(共34层)|2017年|3室1厅|89.99平米|南</td>
+                <td>108万</td>
+                <td>108万</td>
+                <td>12,002元/平</td>
+                <td>38</td>
+                <td>和润林湖美景</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111162845.html" target="_blank">https://zz.ke.com/ershoufang/104111162845.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环地铁口，少有的改善楼盘，精装小三室</td>
+                <td>中楼层(共34层)|2019年|3室2厅|89.34平米|南</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>12,873元/平</td>
+                <td>79</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104109316369.html" target="_blank">https://zz.ke.com/ershoufang/104109316369.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新禧园 3室2厅 东 南</td>
+                <td>中楼层(共18层)|2011年|3室2厅|107.61平米|东南</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>10,223元/平</td>
+                <td>3</td>
+                <td>新禧园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112550346.html" target="_blank">https://zz.ke.com/ershoufang/104112550346.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区 临地铁 楼层采光好次新小区临地铁楼好</td>
+                <td>中楼层(共33层)|2018年|3室1厅|89.13平米|南</td>
+                <td>101万</td>
+                <td>101万</td>
+                <td>11,332元/平</td>
+                <td>19</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112321943.html" target="_blank">https://zz.ke.com/ershoufang/104112321943.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内  09年多层  地铁口  配套齐全</td>
+                <td>中楼层(共6层)|2009年|3室2厅|91.9平米|南北</td>
+                <td>89万</td>
+                <td>89万</td>
+                <td>9,685元/平</td>
+                <td>5</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111770884.html" target="_blank">https://zz.ke.com/ershoufang/104111770884.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>价位低，楼层好，全明格局，地铁口</td>
+                <td>中楼层(共33层)|2018年|3室2厅|90.64平米|南</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>11,364元/平</td>
+                <td>11</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111650183.html" target="_blank">https://zz.ke.com/ershoufang/104111650183.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内 1号线地铁口200米 多层三楼 带地下室</td>
+                <td>中楼层(共6层)|2006年|3室2厅|92.07平米|南北</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>9,776元/平</td>
+                <td>14</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111615165.html" target="_blank">https://zz.ke.com/ershoufang/104111615165.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>朝南向大两居 中层视野开阔 采光好</td>
+                <td>中楼层(共22层)|2010年|3室2厅|107.89平米|南西南</td>
+                <td>92万</td>
+                <td>92万</td>
+                <td>8,528元/平</td>
+                <td>0</td>
+                <td>建设西路169号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111405697.html" target="_blank">https://zz.ke.com/ershoufang/104111405697.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区 中间楼层 采光无遮挡 配套成熟</td>
+                <td>中楼层(共34层)|2019年|3室2厅|88平米|南北</td>
+                <td>117万</td>
+                <td>117万</td>
+                <td>13,296元/平</td>
+                <td>5</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111322157.html" target="_blank">https://zz.ke.com/ershoufang/104111322157.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一，距离一号线地铁口西三环站不到800米</td>
+                <td>中楼层(共33层)|2018年|3室2厅|89.13平米|南</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>11,557元/平</td>
+                <td>42</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110826733.html" target="_blank">https://zz.ke.com/ershoufang/104110826733.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>全明格局，楼层好，视野开阔，位置好</td>
+                <td>中楼层(共33层)|2018年|3室2厅|88.04平米|东南</td>
+                <td>107万</td>
+                <td>107万</td>
+                <td>12,154元/平</td>
+                <td>4</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110824615.html" target="_blank">https://zz.ke.com/ershoufang/104110824615.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>南向三房 中间楼层 毛坯房，没住过</td>
+                <td>中楼层(共33层)|2018年|3室1厅|90.88平米|南</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>11,554元/平</td>
+                <td>15</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110809359.html" target="_blank">https://zz.ke.com/ershoufang/104110809359.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>西流湖公园 双气三房 电梯小高层 有车位 诚心出售</td>
+                <td>中楼层(共11层)|2012年|3室2厅|93.01平米|南北</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,214元/平</td>
+                <td>39</td>
+                <td>正大花溪</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110758158.html" target="_blank">https://zz.ke.com/ershoufang/104110758158.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>中原路西三环，小三室，多层中间楼层，满五唯一</td>
+                <td>中楼层(共6层)|2012年|3室2厅|91.83平米|南</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,346元/平</td>
+                <td>10</td>
+                <td>正大花溪</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110704976.html" target="_blank">https://zz.ke.com/ershoufang/104110704976.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口两梯三户双气三房，南北通透全明户型，拎包入住</td>
+                <td>中楼层(共15层)|2009年|3室2厅|102.96平米|南北</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>9,713元/平</td>
+                <td>20</td>
+                <td>金源城上城</td>
+                <td><a href="https://zz.ke.com/ershoufang/104110163810.html" target="_blank">https://zz.ke.com/ershoufang/104110163810.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>此房南北通透，采光通透，中间楼层，得房率高</td>
+                <td>中楼层(共7层)3室1厅|107.54平米|南北</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>8,369元/平</td>
+                <td>1</td>
+                <td>三官庙北拐街</td>
+                <td><a href="https://zz.ke.com/ershoufang/104109746516.html" target="_blank">https://zz.ke.com/ershoufang/104109746516.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>毛坯房，配套齐全，朝南户型，没有个税，交通便利。</td>
+                <td>中楼层(共33层)|2019年|3室2厅|88.01平米|南</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>13,635元/平</td>
+                <td>22</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108700168.html" target="_blank">https://zz.ke.com/ershoufang/104108700168.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>2005年 有地下室 双气 西三环地铁口10米 近西流湖公园</td>
+                <td>中楼层(共6层)|2005年|3室2厅|109.37平米|南北</td>
+                <td>102万</td>
+                <td>102万</td>
+                <td>9,327元/平</td>
+                <td>9</td>
+                <td>中原水厂家属院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108661436.html" target="_blank">https://zz.ke.com/ershoufang/104108661436.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口，城上城 标准三房 南北通透户型，业主诚心出售</td>
+                <td>中楼层(共15层)|2009年|3室2厅|102.96平米|南北</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>10,199元/平</td>
+                <td>35</td>
+                <td>金源城上城</td>
+                <td><a href="https://zz.ke.com/ershoufang/104106632134.html" target="_blank">https://zz.ke.com/ershoufang/104106632134.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内 地铁口旁 多层南北通透中间楼层三房诚心卖</td>
+                <td>中楼层(共6层)|2009年|3室2厅|91.9平米|南北</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>10,882元/平</td>
+                <td>15</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108665080.html" target="_blank">https://zz.ke.com/ershoufang/104108665080.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口，中间楼层，南北通透户型，业主诚心出售</td>
+                <td>中楼层(共7层)|2006年|3室2厅|109.71平米|南北</td>
+                <td>98万</td>
+                <td>98万</td>
+                <td>8,933元/平</td>
+                <td>30</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108642807.html" target="_blank">https://zz.ke.com/ershoufang/104108642807.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新禧园 3室2厅 东 南</td>
+                <td>中楼层(共18层)|2011年|3室2厅|107.61平米|东南</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>10,223元/平</td>
+                <td>3</td>
+                <td>新禧园</td>
+                <td><a href="https://zz.ke.com/ershoufang/104112550346.html" target="_blank">https://zz.ke.com/ershoufang/104112550346.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>五建家属院 地铁口 双气中间楼层 户型方正</td>
+                <td>中楼层(共7层)|1996年|3室2厅|83.45平米|南北</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>12,583元/平</td>
+                <td>5</td>
+                <td>省五建家属院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111980483.html" target="_blank">https://zz.ke.com/ershoufang/104111980483.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区 中间楼层 采光无遮挡 配套成熟</td>
+                <td>中楼层(共34层)|2019年|3室2厅|88平米|南北</td>
+                <td>117万</td>
+                <td>117万</td>
+                <td>13,296元/平</td>
+                <td>5</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104111322157.html" target="_blank">https://zz.ke.com/ershoufang/104111322157.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>前进路市场街 101平方3房02年110万</td>
+                <td>中楼层(共7层)|2003年|3室2厅|101.01平米|南</td>
+                <td>89万</td>
+                <td>89万</td>
+                <td>8,812元/平</td>
+                <td>5</td>
+                <td>市场街74-82号</td>
+                <td><a href="https://zz.ke.com/ershoufang/104108906176.html" target="_blank">https://zz.ke.com/ershoufang/104108906176.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>五一公园 双地铁 02年双气三居室 南北通透</td>
+                <td>中楼层(共5层)3室1厅|85.2平米|南北</td>
+                <td>85万</td>
+                <td>85万</td>
+                <td>9,977元/平</td>
+                <td>23</td>
+                <td>建设路107号院</td>
+                <td><a href="https://zz.ke.com/ershoufang/104107311118.html" target="_blank">https://zz.ke.com/ershoufang/104107311118.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>五一公园地铁口、 3室。3层、南北朝向</td>
+                <td>中楼层(共7层)3室2厅|95.07平米|南北</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>10,519元/平</td>
+                <td>30</td>
+                <td>国棉一厂家属院二区</td>
+                <td><a href="https://zz.ke.com/ershoufang/104106786456.html" target="_blank">https://zz.ke.com/ershoufang/104106786456.html</a></td>
+                <td>贝壳</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>电力小区三居好楼层淮河路73</td>
+                <td>3室2厅|94.06平米|南北|简装|中楼层(共6层)|板楼</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>12,758元/平</td>
+                <td>3</td>
+                <td>电力C区332号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112036537.html" target="_blank">https://zz.lianjia.com/ershoufang/104112036537.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区小高层精装修中原万达旁</td>
+                <td>3室1厅|86.87平米|南|精装|中楼层(共17层)|板塔结合</td>
+                <td>119万</td>
+                <td>119万</td>
+                <td>13,699元/平</td>
+                <td>0</td>
+                <td>阳光城丽景公馆南苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112151431.html" target="_blank">https://zz.lianjia.com/ershoufang/104112151431.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>20年交房房子精装修人车分流拎包住</td>
+                <td>3室2厅|88.48平米|南|精装|中楼层(共33层)|板塔结合</td>
+                <td>107万</td>
+                <td>107万</td>
+                <td>12,094元/平</td>
+                <td>5</td>
+                <td>升龙天汇七号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112110371.html" target="_blank">https://zz.lianjia.com/ershoufang/104112110371.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>85平小三房，每个卧室大小均等，纯朝南户型，全明户型</td>
+                <td>3室1厅|83.8平米|南|精装|中楼层(共34层)|塔楼</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>12,292元/平</td>
+                <td>9</td>
+                <td>保利心语一期</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110515858.html" target="_blank">https://zz.lianjia.com/ershoufang/104110515858.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>康桥品质小高层社区得房率高公摊少南北通透三房</td>
+                <td>3室2厅|87.15平米|南北|精装|中楼层(共11层)|塔楼</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>13,196元/平</td>
+                <td>1</td>
+                <td>康桥上城品</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111645914.html" target="_blank">https://zz.lianjia.com/ershoufang/104111645914.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环地铁口，少有的改善楼盘，精装小三室</td>
+                <td>3室2厅|89.34平米|南|精装|中楼层(共34层)|塔楼</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>12,873元/平</td>
+                <td>7</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104109316369.html" target="_blank">https://zz.lianjia.com/ershoufang/104109316369.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>锦艺国际华都美域三室一厅朝南全明户型精装双气</td>
+                <td>3室2厅|85.92平米|南|精装|中楼层(共33层)|板塔结合</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>11,639元/平</td>
+                <td>8</td>
+                <td>锦艺国际华都美域</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104106236774.html" target="_blank">https://zz.lianjia.com/ershoufang/104106236774.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>奥体旁，精装边户，拎包入住，不临高铁高架，诚意出售</td>
+                <td>3室2厅|85.85平米|南北|精装|中楼层(共33层)|板塔结合</td>
+                <td>83万</td>
+                <td>83万</td>
+                <td>9,669元/平</td>
+                <td>22</td>
+                <td>汇泉城3号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108298787.html" target="_blank">https://zz.lianjia.com/ershoufang/104108298787.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内地铁口品质小区精装小三房朝南户型拎包入住</td>
+                <td>3室1厅|89.99平米|南|精装|中楼层(共34层)|板楼</td>
+                <td>108万</td>
+                <td>108万</td>
+                <td>12,002元/平</td>
+                <td>5</td>
+                <td>和润林湖美景</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111162845.html" target="_blank">https://zz.lianjia.com/ershoufang/104111162845.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>契税满两年，户型方正，好楼层，诚心卖，可看房</td>
+                <td>3室2厅|90.97平米|南|毛坯|中楼层(共34层)|暂无数据</td>
+                <td>110.6万</td>
+                <td>110.6万</td>
+                <td>12,158元/平</td>
+                <td>1</td>
+                <td>融信望湖宸院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110682625.html" target="_blank">https://zz.lianjia.com/ershoufang/104110682625.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>精装修大三房，业主诚心出售，看房方便</td>
+                <td>3室2厅|107.73平米|南北|精装|中楼层(共34层)|板塔结合</td>
+                <td>96万</td>
+                <td>96万</td>
+                <td>8,912元/平</td>
+                <td>0</td>
+                <td>汇泉城一号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112254294.html" target="_blank">https://zz.lianjia.com/ershoufang/104112254294.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>不临车道中间楼层采光好视野开阔双地铁配套齐全</td>
+                <td>3室1厅|88.54平米|南|精装|中楼层(共33层)|板塔结合</td>
+                <td>109.9万</td>
+                <td>109.9万</td>
+                <td>12,413元/平</td>
+                <td>1</td>
+                <td>锦艺国际华都欧尚</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112499593.html" target="_blank">https://zz.lianjia.com/ershoufang/104112499593.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>通透格局，精装自住，视野宽阔，采光充足，配套完善</td>
+                <td>3室2厅|107.22平米|南|精装|中楼层(共32层)|塔楼</td>
+                <td>95.2万</td>
+                <td>95.2万</td>
+                <td>8,879元/平</td>
+                <td>1</td>
+                <td>汇泉城2号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112032125.html" target="_blank">https://zz.lianjia.com/ershoufang/104112032125.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>甄选好房业主着急出售次新小区万科物</td>
+                <td>3室2厅|96.09平米|西南|精装|中楼层(共33层)|板楼</td>
+                <td>116万</td>
+                <td>116万</td>
+                <td>12,073元/平</td>
+                <td>2</td>
+                <td>万科城湖心岛</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111084517.html" target="_blank">https://zz.lianjia.com/ershoufang/104111084517.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>临河而居百分氛围感好房精装新房中间楼层诚售</td>
+                <td>3室1厅|88.08平米|南北|精装|中楼层(共35层)|板楼</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>11,921元/平</td>
+                <td>2</td>
+                <td>新合鑫观悦锦苑</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111912613.html" target="_blank">https://zz.lianjia.com/ershoufang/104111912613.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>翰林国际桃李园满两年精装修看房方便业主诚心出售。</td>
+                <td>3室2厅|94.26平米|南北|精装|中楼层(共33层)|板楼</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>11,670元/平</td>
+                <td>1</td>
+                <td>翰林国际城桃李园小区</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110142006.html" target="_blank">https://zz.lianjia.com/ershoufang/104110142006.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>甄选好房着急出售次新小区中间楼层环境优美</td>
+                <td>3室2厅|88.95平米|南|精装|中楼层(共27层)|板楼</td>
+                <td>86万</td>
+                <td>86万</td>
+                <td>9,669元/平</td>
+                <td>0</td>
+                <td>金辉优步花园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111081387.html" target="_blank">https://zz.lianjia.com/ershoufang/104111081387.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>8号D铁口建业开发三房光线充足上科创</td>
+                <td>3室2厅|88.08平米|南北|精装|33层|塔楼</td>
+                <td>92万</td>
+                <td>92万</td>
+                <td>10,446元/平</td>
+                <td>6</td>
+                <td>五龙新城香榭园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111102599.html" target="_blank">https://zz.lianjia.com/ershoufang/104111102599.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>双地铁口的次新小区，三开间朝南向</td>
+                <td>3室2厅|90.48平米|南|简装|中楼层(共24层)|板塔结合</td>
+                <td>87万</td>
+                <td>87万</td>
+                <td>9,616元/平</td>
+                <td>9</td>
+                <td>升龙又一城AB区</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111155401.html" target="_blank">https://zz.lianjia.com/ershoufang/104111155401.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>万科湖心岛中间好楼层精装修，业主诚心卖，随时看房</td>
+                <td>3室2厅|94.7平米|南|精装|中楼层(共33层)|板楼</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>11,616元/平</td>
+                <td>2</td>
+                <td>万科城湖心岛</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111308953.html" target="_blank">https://zz.lianjia.com/ershoufang/104111308953.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环地铁口，少有的改善楼盘，精装小三室</td>
+                <td>3室2厅|89.34平米|南|精装|中楼层(共34层)|塔楼</td>
+                <td>115万</td>
+                <td>115万</td>
+                <td>12,873元/平</td>
+                <td>7</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104109316369.html" target="_blank">https://zz.lianjia.com/ershoufang/104109316369.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内地铁口品质小区精装小三房朝南户型拎包入住</td>
+                <td>3室1厅|89.99平米|南|精装|中楼层(共34层)|板楼</td>
+                <td>108万</td>
+                <td>108万</td>
+                <td>12,002元/平</td>
+                <td>5</td>
+                <td>和润林湖美景</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111162845.html" target="_blank">https://zz.lianjia.com/ershoufang/104111162845.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>中原路西三环，小三室，多层中间楼层，满五唯一</td>
+                <td>3室2厅|91.83平米|南|简装|中楼层(共6层)|板楼</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,346元/平</td>
+                <td>0</td>
+                <td>正大花溪</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110704976.html" target="_blank">https://zz.lianjia.com/ershoufang/104110704976.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯一，距离一号线地铁口西三环站不到800米</td>
+                <td>3室2厅|89.13平米|南|精装|中楼层(共33层)|板楼</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>11,557元/平</td>
+                <td>2</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110826733.html" target="_blank">https://zz.lianjia.com/ershoufang/104110826733.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内1号线地铁口200米多层三楼带地下室</td>
+                <td>3室2厅|92.07平米|南北|其他|中楼层(共6层)|板楼</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>9,776元/平</td>
+                <td>0</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111615165.html" target="_blank">https://zz.lianjia.com/ershoufang/104111615165.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>南向三房中间楼层毛坯房，没住过</td>
+                <td>3室1厅|90.88平米|南|毛坯|中楼层(共33层)|板楼</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>11,554元/平</td>
+                <td>1</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110809359.html" target="_blank">https://zz.lianjia.com/ershoufang/104110809359.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口，城上城标准三房南北通透户型，业主诚心出售</td>
+                <td>3室2厅|102.96平米|南北|简装|中楼层(共15层)|板楼</td>
+                <td>105万</td>
+                <td>105万</td>
+                <td>10,199元/平</td>
+                <td>22</td>
+                <td>金源城上城</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104106632134.html" target="_blank">https://zz.lianjia.com/ershoufang/104106632134.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区中间楼层采光无遮挡配套成熟</td>
+                <td>3室2厅|88平米|南北|其他|中楼层(共34层)|板楼</td>
+                <td>117万</td>
+                <td>117万</td>
+                <td>13,296元/平</td>
+                <td>1</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111322157.html" target="_blank">https://zz.lianjia.com/ershoufang/104111322157.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>价位低，楼层好，全明格局，地铁口</td>
+                <td>3室2厅|90.64平米|南|精装|中楼层(共33层)|板楼</td>
+                <td>103万</td>
+                <td>103万</td>
+                <td>11,364元/平</td>
+                <td>1</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111650183.html" target="_blank">https://zz.lianjia.com/ershoufang/104111650183.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>此房南北通透，采光通透，中间楼层，得房率高</td>
+                <td>3室1厅|107.54平米|南北|简装|中楼层(共7层)|板楼</td>
+                <td>90万</td>
+                <td>90万</td>
+                <td>8,369元/平</td>
+                <td>1</td>
+                <td>三官庙北拐街</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104109746516.html" target="_blank">https://zz.lianjia.com/ershoufang/104109746516.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口两梯三户双气三房，南北通透全明户型，拎包入住</td>
+                <td>3室2厅|102.96平米|南北|简装|中楼层(共15层)|板楼</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>9,713元/平</td>
+                <td>1</td>
+                <td>金源城上城</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110163810.html" target="_blank">https://zz.lianjia.com/ershoufang/104110163810.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>西流湖公园双气三房电梯小高层有车位诚心出售</td>
+                <td>3室2厅|93.01平米|南北|精装|中楼层(共11层)|塔楼</td>
+                <td>95万</td>
+                <td>95万</td>
+                <td>10,214元/平</td>
+                <td>4</td>
+                <td>正大花溪</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110758158.html" target="_blank">https://zz.lianjia.com/ershoufang/104110758158.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>全明格局，楼层好，视野开阔，位置好</td>
+                <td>3室2厅|88.04平米|东南|其他|中楼层(共33层)|板楼</td>
+                <td>107万</td>
+                <td>107万</td>
+                <td>12,154元/平</td>
+                <td>1</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104110824615.html" target="_blank">https://zz.lianjia.com/ershoufang/104110824615.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>毛坯房，配套齐全，朝南户型，没有个税，交通便利。</td>
+                <td>3室2厅|88.01平米|南|毛坯|中楼层(共33层)|塔楼</td>
+                <td>120万</td>
+                <td>120万</td>
+                <td>13,635元/平</td>
+                <td>2</td>
+                <td>五建新街坊5号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108700168.html" target="_blank">https://zz.lianjia.com/ershoufang/104108700168.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内地铁口旁多层南北通透中间楼层三房诚心卖</td>
+                <td>3室2厅|91.9平米|南北|简装|中楼层(共6层)|板楼</td>
+                <td>100万</td>
+                <td>100万</td>
+                <td>10,882元/平</td>
+                <td>12</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108665080.html" target="_blank">https://zz.lianjia.com/ershoufang/104108665080.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁口，中间楼层，南北通透户型，业主诚心出售</td>
+                <td>3室2厅|109.71平米|南北|简装|中楼层(共7层)|板楼</td>
+                <td>98万</td>
+                <td>98万</td>
+                <td>8,933元/平</td>
+                <td>19</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108642807.html" target="_blank">https://zz.lianjia.com/ershoufang/104108642807.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>2005年有地下室双气西三环地铁口10米近西流湖公园</td>
+                <td>3室2厅|109.37平米|南北|简装|中楼层(共6层)|板楼</td>
+                <td>102万</td>
+                <td>102万</td>
+                <td>9,327元/平</td>
+                <td>3</td>
+                <td>中原水厂家属院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104108661436.html" target="_blank">https://zz.lianjia.com/ershoufang/104108661436.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>三环内09年多层地铁口配套齐全</td>
+                <td>3室2厅|91.9平米|南北|其他|中楼层(共6层)|板楼</td>
+                <td>89万</td>
+                <td>89万</td>
+                <td>9,685元/平</td>
+                <td>0</td>
+                <td>江山名居</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111770884.html" target="_blank">https://zz.lianjia.com/ershoufang/104111770884.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>朝南向大两居中层视野开阔采光好</td>
+                <td>3室2厅|107.89平米|南西南|其他|中楼层(共22层)|板楼</td>
+                <td>92万</td>
+                <td>92万</td>
+                <td>8,528元/平</td>
+                <td>1</td>
+                <td>建设西路169号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104111405697.html" target="_blank">https://zz.lianjia.com/ershoufang/104111405697.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新禧园3室2厅东南</td>
+                <td>3室2厅|107.61平米|东南|简装|中楼层(共18层)|板塔结合</td>
+                <td>110万</td>
+                <td>110万</td>
+                <td>10,223元/平</td>
+                <td>1</td>
+                <td>新禧园</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112550346.html" target="_blank">https://zz.lianjia.com/ershoufang/104112550346.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>次新小区临地铁楼层采光好次新小区临地铁楼好</td>
+                <td>3室1厅|89.13平米|南|精装|中楼层(共33层)|板楼</td>
+                <td>101万</td>
+                <td>101万</td>
+                <td>11,332元/平</td>
+                <td>1</td>
+                <td>五建新街坊1号院</td>
+                <td><a href="https://zz.lianjia.com/ershoufang/104112321943.html" target="_blank">https://zz.lianjia.com/ershoufang/104112321943.html</a></td>
+                <td>链家</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>升降标志</th>
+                <th>房屋名</th>
+                <th>房屋备注</th>
+                <th>房屋总价</th>
+                <th>房屋历史总价</th>
+                <th>房屋单价</th>
+                <th>关注人数</th>
+                <th>小区名</th>
+                <th>房屋链接</th>
+                <th>来源网站</th>
+            </tr>
+            </tfoot>
+        </table><br>
+没有上个月的数据<br>
+</div>
+</body>
+</html>

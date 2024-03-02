@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Map Punctuation Tool</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        #panel {
+            position: absolute;
+            top: 30px;
+            left: 10px;
+            z-index: 999;
+            color: #fff;
+        }
+
+        #login {
+            position: absolute;
+            width: 300px;
+            height: 40px;
+            left: 50%;
+            top: 50%;
+            margin: -40px 0 0 -150px;
+        }
+
+        #login input[type=password] {
+            width: 200px;
+            height: 30px;
+            padding: 3px;
+            line-height: 30px;
+            border: 1px solid #000;
+        }
+
+        #login input[type=submit] {
+            width: 80px;
+            height: 38px;
+            display: inline-block;
+            line-height: 38px;
+        }
+    </style>
+    <script type="text/javascript"
+    <!-- 更换为自己的百度apiK -->
+        src="http://api.map.baidu.com/api?v=2.0&ak=nm3ekA0dGctqFE2dCs2fr5dfdfoZ89hRJrFB"></script>
+    <script type="text/javascript" src="http://lbsyun.baidu.com/jsdemo/data/points-sample-data.js"></script>
+    <script type="text/javascript" src="js/xlsx.core.min.js"></script>
+    <script type="text/javascript" src="js/convertor_offline.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script type="text/javascript">
+
+        var map = new BMap.Map("map", {});
+        // 配置中心点
+        map.centerAndZoom(new BMap.Point(113.78, 34.76), 12);     // ,
+        map.enableScrollWheelZoom();
+        $.ajax({
+            type: "get",
+            url: "./food.json",
+            dataType: "json",
+            success: function (data) {
+                var jingdu = [];
+
+                var weidu = [];
+
+                data.map(item => {
+
+                    jingdu.push(eval(JSON.stringify(item.lng)));
+                    weidu.push(eval(JSON.stringify(item.lat)));
+                })
+
+                if (document.createElement('canvas').getContext) {
+                    var foodPoints = [];
+                    for (let i = 0; i < jingdu.length; i++) {
+                        foodPoints.push(wgs2bd(new BMap.Point(jingdu[i], weidu[i])));
+                    }
+                    var foodOptions = {
+                        size: BMAP_POINT_SIZE_SMALL,
+                        shape: BMAP_POINT_SHAPE_CIRCLE,
+                        color: '#FFA500'
+                    }
+                    var pointCollection = new BMap.PointCollection(foodPoints, foodOptions);
+                    pointCollection.addEventListener('click', function (e) {
+                        alert('The coordinate here is ' + e.point.lng + ',' + e.point.lat);
+                    });
+                    map.addOverlay(pointCollection);
+                } else {
+                    alert('Your browser does not support drawing coordinate points!');
+                }
+            }
+        })
+
+
+        $.ajax({
+            type: "get",
+            url: "./shop.json",
+            dataType: "json",
+            success: function (data) {
+                var jingdu = [];
+
+                var weidu = [];
+
+                data.map(item => {
+
+                    jingdu.push(eval(JSON.stringify(item.lng)));
+                    weidu.push(eval(JSON.stringify(item.lat)));
+                })
+
+                if (document.createElement('canvas').getContext) {
+                    var shopPoints = [];
+                    for (let i = 0; i < jingdu.length; i++) {
+                        shopPoints.push(wgs2bd(new BMap.Point(jingdu[i], weidu[i])));
+                    }
+                    var shopOptions = {
+                        size: BMAP_POINT_SIZE_SMALL,
+                        shape: BMAP_POINT_SHAPE_CIRCLE,
+                        color: '#0000CD'
+                    }
+                    var pointCollection = new BMap.PointCollection(shopPoints, shopOptions);
+                    pointCollection.addEventListener('click', function (e) {
+                        alert('点击的地方是 ' + e.point.lng + ',' + e.point.lat);
+                    });
+                    map.addOverlay(pointCollection);
+                } else {
+                    alert('Your browser does not support drawing coordinate points!');
+                }
+            }
+        })
+
+        $.ajax({
+            type: "get",
+            url: "./school.json",
+            dataType: "json",
+            success: function (data) {
+                var jingdu = [];
+
+                var weidu = [];
+
+                var name = [];
+
+                data.map(item => {
+
+                    jingdu.push(eval(JSON.stringify(item.lng)));
+                    weidu.push(eval(JSON.stringify(item.lat)));
+                    name.push(item.name)
+                })
+
+                if (document.createElement('canvas').getContext) {
+                    var schoolPoints = [];
+                    for (let i = 0; i < jingdu.length; i++) {
+                        var point = wgs2bd(new BMap.Point(jingdu[i], weidu[i]));
+                        schoolPoints.push(point);
+                        // 创建标签
+                        var label = new BMap.Label(name[i], {
+                            position: point,
+                            offset: new BMap.Size(10, -10) // 设置文本偏移量
+                        });
+                        // 在地图上显示学校名称
+                        // map.addOverlay(label); // 添加标签到地图中
+
+
+                    }
+                    var schoolOptions = {
+                        size: BMAP_POINT_SIZE_SMALL,
+                        shape: BMAP_POINT_SHAPE_CIRCLE,
+                        color: '#00FF00'
+                    }
+                    var pointCollection = new BMap.PointCollection(schoolPoints, schoolOptions);
+                    pointCollection.addEventListener('click', function (e) {
+                        console.log('点击的地方是:', e.point.lng, e.point.lat);
+                    });
+                    map.addOverlay(pointCollection);
+                } else {
+                    alert('Your browser does not support drawing coordinate points!');
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
