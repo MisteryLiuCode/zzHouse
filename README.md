@@ -20,7 +20,7 @@
   - http://housemap.misteryliu.com/ 
 
 ## 粗略教程
-
+- 后端项目：https://github.com/MisteryLiuCode/zzHouseSpringBoot
 - 项目中每个文件夹都是一个小项目
 - 以map结尾的项目，需要注册百度的apik，在index.html中
 - house项目需要填写数据库账号密码
